@@ -37,7 +37,11 @@ https://github.com/Ltek/weather-flex-card
 
 Example showing just a fraction of the available options...
 
-<img width="300" alt="screen3" src="https://github.com/user-attachments/assets/595bb1a0-ea1b-4617-ab3e-681ef40bbe96" />
-<img width="350" alt="screen2" src="https://github.com/user-attachments/assets/4b547210-b469-46f4-a661-b5f2894e1383" />
-<img width="400" alt="screen1" src="https://github.com/user-attachments/assets/c8beb90a-7309-4383-b4b4-d02697503f01" />
-<img width="400" alt="skybar" src="https://github.com/user-attachments/assets/391b0482-5a1c-40be-b353-f291e2332eb3" />
+<img alt="screen3" src="https://github.com/user-attachments/assets/595bb1a0-ea1b-4617-ab3e-681ef40bbe96" style="width: 25%; height: auto;" />
+
+<img alt="screen2" src="https://github.com/user-attachments/assets/4b547210-b469-46f4-a661-b5f2894e1383" style="width: 25%; height: auto;" />
+
+<img alt="screen1" src="https://github.com/user-attachments/assets/c8beb90a-7309-4383-b4b4-d02697503f01" style="width: 25%; height: auto;" />
+
+<img alt="Copilot_20260815_161729" src="https://github.com/user-attachments/assets/391b0482-5a1c-40be-b353-f291e2332eb3" style="width: 25%; height: auto;" />
+
