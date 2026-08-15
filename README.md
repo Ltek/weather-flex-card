@@ -1,6 +1,6 @@
 # Weather Flex Card
 
-The Most Flexible and Feature Rich Weather Card available for Home Assistant.
+The Most Flexible and Feature Rich Forecast Card available for Home Assistant.
 
 A fully-customizable weather card that lets you build exactly the weather display you want — current conditions, hourly/daily forecasts, a sky-brightness gradient bar, a sunrise/sunset arc, and a digital clock — each an independent, reorderable section with its own styling. Every section can pull from multiple weather entities and your own sensors.
 
