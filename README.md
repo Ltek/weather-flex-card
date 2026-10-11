@@ -1,8 +1,8 @@
 # Weather Flex Card
 
-The Most Flexible and Feature Rich Forecast Card available for Home Assistant.
+The Most Flexible and Feature Rich Weather Card available for Home Assistant.
 
-A fully-customizable weather card that lets you build exactly the weather display you want — current conditions, hourly/daily forecasts, a sky-brightness gradient bar, a sunrise/sunset arc, and a digital clock — each an independent, reorderable section with its own styling. Every section can pull from multiple weather entities and your own sensors.
+A sectioned, fully-customizable weather card that lets you build exactly the weather display you want — current conditions, hourly/daily forecasts, a sky-brightness gradient bar, a sunrise/sunset arc, and a digital clock — each an independent, reorderable section with its own styling. Every section can pull from multiple weather entities and your own sensors.
 
 ... all in a super easy to use Visual Editor — no YAML required unless you prefer it.
 
@@ -11,7 +11,7 @@ https://github.com/Ltek/weather-flex-card
 ### ✨ Features
 
 * **Sectioned, reorderable layout** – The card is built from independent sections — **Current Weather Header, Current Weather Metrics, Hourly Forecast, Daily Forecast, Sky Bar, Sun Position, and Clock & Date**. Drag to reorder, show/hide any section, and style each one on its own.
-* **Multiple weather sources** – Set a **Primary** weather entity, a **Fallback** entity, and **per-metric Custom overrides** (any entity — a weather integration *or* your own sensor). Resolution runs Custom → Primary → Fallback → blank, so you can mix the best data source for each value. Forecasts merge across multiple entities.
+* **Multiple weather sources (ordered priority list)** – Build an **ordered list of sources** — top = highest priority. Each value is pulled from the first source in the list that has it, so order *is* precedence. A source can be a **weather entity**, a **local-station device** (e.g. Ecowitt — its sensors are auto-mapped to the right values), or any single **sensor**. Reorder with up/down arrows, **hide any source with the eye toggle** (kept in the list, skipped while hidden), and remove with the trash icon. Each row shows a **condensed Property · entity · value summary** of what it provides, plus an **edit (✎) view** for per-value overrides. The **forecast and weather condition** come from the highest weather entity in the list (tagged 📡). Forecasts merge across weather sources in the same priority order. Units are shown as each source reports them (no conversion).
 * **Card Appearance** – Full card-wrapper styling to match any dashboard: border (per-side toggles + per-corner rounding), background color, glow, and a separate drop-shadow (color / X / Y / blur / spread / opacity). Custom weather-condition icon path and moon-phase shading included.
 * **Current Weather Header** – Independent size controls for the condition icon, condition text, and temperature; a configurable sub-header metric (defaults to today's high/low), a custom friendly name, and a header metrics row drawn from built-in metrics and/or any entity.
 * **Current Weather Metrics** – Display any set of weather metrics as a **Grid/Wrap list or as Chips**. Chips are fully styleable (text size, icon size, icon color, pill or custom corner radius, columns, show name/icon, hide-when-empty). Global value styling with per-value "Custom" overrides.
@@ -23,11 +23,29 @@ https://github.com/Ltek/weather-flex-card
 * **Per-section styling** – Every section shares a consistent **Section Styles** panel: flush-to-edge/top/bottom, section dividers (above/below with thickness, length, style, color), and a semi-transparent section background — all with independent values per section.
 * **Full visual editor** – Everything is configurable through the visual editor, organized into collapsible panels and sub-panels with per-section Reset buttons, modern sliders/dropdowns, and a read-only YAML view. Optional auto-collapse keeps the editor tidy.
 
+### 🆕 What's New (build 2026.10.11.85 vs 2026.08.15.79)
+
+The headline change is a completely reworked **Weather Sources** system, built to support local weather stations (Ecowitt, Tempest, Davis, …) that expose a *device with many sensors* instead of a single `weather.*` entity.
+
+* **Local weather stations as a source.** Add a **device** (not just a weather entity) as a source. The card auto-maps its sensors to the right values — e.g. an Ecowitt GW2000B maps outdoor temperature, feels-like, dew point, humidity, pressure (sea-level, not absolute), wind speed/gust/direction, UV, solar radiation, lux, and rain — preferring outdoor over indoor and instantaneous over averaged readings.
+* **Ordered priority list replaces Primary / Fallback / Custom.** Sources are now one ordered list — **top = highest priority** — and each value is pulled from the first source that has it. Order *is* precedence, so the old slot naming is gone. Soft cap of 4 sources.
+* **"+ Add Source" button** at the top reveals the entity/device pickers only when pressed.
+* **Per-source value mapping + overrides.** Every source shows a condensed **Property · entity · value** summary; an **edit (✎)** view lets you override any individual value to a different entity (your own sensor, a more accurate source, etc.).
+* **Hide (eye) toggle per source** — temporarily disable a source without removing it or its mapping.
+* **New values supported:** `temperature`, `wind_bearing`, and local-station extras **solar radiation, illuminance/lux, and rain/precipitation** (which have no standard weather-entity equivalent).
+* **Forecast & weather condition** always come from the highest-priority weather entity in the list (tagged **📡**), with a clear warning if the list has no weather entity. Forecasts merge across weather sources in the same priority order.
+* **Current-weather header fixes.** The header (headline temperature + built-in metrics) now honors every source in the list — previously it ignored the primary source and could not source the headline temperature at all, forcing use of the stock "Custom Temperature Entity" field. That field still works but is now an optional override; leaving it blank lets the source list drive the headline.
+* **Editor polish.** All ordering selectors (sections, metrics, values, sources) share the standard reorder arrows and show/hide **eye** icons on the right, with theme-color representative icons on the left.
+* **Fully backward compatible.** Existing cards keep working untouched; legacy configs are migrated to the new source list only when you next edit and save the Weather Sources panel.
+
+See `CHANGELOG.md` for the per-build detail.
+
 ### 🚀 Installation
 
 1. Create the folder `\config\www\community\weather-flex-card`
 2. Download [`weather-flex-card.js`](https://github.com/Ltek/weather-flex-card/blob/main/weather-flex-card.js) and place it in that folder.
 3. Add as a Dashboard Resource:
+
    * Go to Settings > Dashboards > three-dot menu > Add Resource
    * Enter `/local/community/weather-flex-card/weather-flex-card.js` and select "JavaScript Module"
    * Click "Add"
@@ -37,11 +55,4 @@ https://github.com/Ltek/weather-flex-card
 
 Example showing just a fraction of the available options...
 
-<img alt="screen3" src="https://github.com/user-attachments/assets/595bb1a0-ea1b-4617-ab3e-681ef40bbe96" style="width: 25%; height: auto;" />
-
-<img alt="screen2" src="https://github.com/user-attachments/assets/4b547210-b469-46f4-a661-b5f2894e1383" style="width: 25%; height: auto;" />
-
-<img alt="screen1" src="https://github.com/user-attachments/assets/c8beb90a-7309-4383-b4b4-d02697503f01" style="width: 25%; height: auto;" />
-
-<img alt="Copilot_20260815_161729" src="https://github.com/user-attachments/assets/391b0482-5a1c-40be-b353-f291e2332eb3" style="width: 25%; height: auto;" />
-
+<!-- Add screenshot here -->

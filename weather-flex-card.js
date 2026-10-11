@@ -1,4 +1,4 @@
-/* weather-flex-card build 2026.08.15.79 */
+/* weather-flex-card build 2026.10.11.85 */
 /* weather-flex-card double-load guard */
 (function(){var R="undefined"!=typeof window&&window.customElements;if(R&&!R._wfcGuard){R._wfcGuard=1;var d=R.define.bind(R);R.define=function(n,c,o){if(R.get(n))return;try{return d(n,c,o)}catch(e){}}}})();
 let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0,configurable:!0})}var r,s,a,o,n,l,c,h,d,u,f,p,g,m,y,b="u">typeof globalThis?globalThis:"u">typeof self?self:"u">typeof window?window:"u">typeof global?global:{},_={},v={},w=b.parcelRequirefe65;null==w&&((w=function(t){if(t in _)return _[t].exports;if(t in v){var e=v[t];delete v[t];var i={id:t,exports:{}};return _[t]=i,e.call(i.exports,i,i.exports),i.exports}var r=Error("Cannot find module '"+t+"'");throw r.code="MODULE_NOT_FOUND",r}).register=function(t,e){v[t]=e},b.parcelRequirefe65=w);var x=w.register;function k(t,e,i,r){var s,a=arguments.length,o=a<3?e:null===r?r=Object.getOwnPropertyDescriptor(e,i):r;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)o=Reflect.decorate(t,e,i,r);else for(var n=t.length-1;n>=0;n--)(s=t[n])&&(o=(a<3?s(o):a>3?s(e,i,o):s(e,i))||o);return a>3&&o&&Object.defineProperty(e,i,o),o}x("dh6Qz",function(t,e){i(t.exports,"default",function(){return l});var r=w("cRGle"),s=e&&!e.nodeType&&e,a=s&&t&&!t.nodeType&&t,o=a&&a.exports===s?r.default.Buffer:void 0,n=o?o.allocUnsafe:void 0,l=function(t,e){if(e)return t.slice();var i=t.length,r=n?n(i):new t.constructor(i);return t.copy(r),r}}),x("cRGle",function(t,e){i(t.exports,"default",function(){return a});var r=w("7VHEW"),s="object"==typeof self&&self&&self.Object===Object&&self,a=r.default||s||Function("return this")()}),x("7VHEW",function(t,e){i(t.exports,"default",function(){return r});var r="object"==typeof b&&b&&b.Object===Object&&b}),x("aASW1",function(t,e){i(t.exports,"default",function(){return l});var r=w("cRGle"),s=w("ew3sR"),a=e&&!e.nodeType&&e,o=a&&t&&!t.nodeType&&t,n=o&&o.exports===a?r.default.Buffer:void 0,l=(n?n.isBuffer:void 0)||s.default}),x("ew3sR",function(t,e){i(t.exports,"default",function(){return r});var r=function(){return!1}}),x("247iH",function(t,e){i(t.exports,"default",function(){return n});var r=w("7VHEW"),s=e&&!e.nodeType&&e,a=s&&t&&!t.nodeType&&t,o=a&&a.exports===s&&r.default.process,n=function(){try{var t=a&&a.require&&a.require("util").types;if(t)return t;return o&&o.binding&&o.binding("util")}catch(t){}}()}),"function"==typeof SuppressedError&&SuppressedError;var M=function(t,e){return t===e||t!=t&&e!=e},S=function(t,e){for(var i=t.length;i--;)if(M(t[i][0],e))return i;return -1},A=Array.prototype.splice;function $(t){var e=-1,i=null==t?0:t.length;for(this.clear();++e<i;){var r=t[e];this.set(r[0],r[1])}}$.prototype.clear=function(){this.__data__=[],this.size=0},$.prototype.delete=function(t){var e=this.__data__,i=S(e,t);return!(i<0)&&(i==e.length-1?e.pop():A.call(e,i,1),--this.size,!0)},$.prototype.get=function(t){var e=this.__data__,i=S(e,t);return i<0?void 0:e[i][1]},$.prototype.has=function(t){return S(this.__data__,t)>-1},$.prototype.set=function(t,e){var i=this.__data__,r=S(i,t);return r<0?(++this.size,i.push([t,e])):i[r][1]=e,this};var C=w("cRGle"),E=C.default.Symbol,O=Object.prototype,P=O.hasOwnProperty,z=O.toString,T=E?E.toStringTag:void 0,D=function(t){var e=P.call(t,T),i=t[T];try{t[T]=void 0;var r=!0}catch(t){}var s=z.call(t);return r&&(e?t[T]=i:delete t[T]),s},F=Object.prototype.toString,L=E?E.toStringTag:void 0,R=function(t){return null==t?void 0===t?"[object Undefined]":"[object Null]":L&&L in Object(t)?D(t):F.call(t)},j=function(t){var e=typeof t;return null!=t&&("object"==e||"function"==e)},I=function(t){if(!j(t))return!1;var e=R(t);return"[object Function]"==e||"[object GeneratorFunction]"==e||"[object AsyncFunction]"==e||"[object Proxy]"==e},C=w("cRGle"),W=C.default["__core-js_shared__"],H=(a=/[^.]+$/.exec(W&&W.keys&&W.keys.IE_PROTO||""))?"Symbol(src)_1."+a:"",N=Function.prototype.toString,V=function(t){if(null!=t){try{return N.call(t)}catch(t){}try{return t+""}catch(t){}}return""},U=/^\[object .+?Constructor\]$/,B=Object.prototype,q=Function.prototype.toString,X=B.hasOwnProperty,J=RegExp("^"+q.call(X).replace(/[\\^$.*+?()[\]{}|]/g,"\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g,"$1.*?")+"$"),Y=function(t){return!!j(t)&&(!H||!(H in t))&&(I(t)?J:U).test(V(t))},G=function(t,e){var i=null==t?void 0:t[e];return Y(i)?i:void 0},C=w("cRGle"),Z=G(C.default,"Map"),Q=G(Object,"create"),K=Object.prototype.hasOwnProperty,tt=Object.prototype.hasOwnProperty;function te(t){var e=-1,i=null==t?0:t.length;for(this.clear();++e<i;){var r=t[e];this.set(r[0],r[1])}}te.prototype.clear=function(){this.__data__=Q?Q(null):{},this.size=0},te.prototype.delete=function(t){var e=this.has(t)&&delete this.__data__[t];return this.size-=!!e,e},te.prototype.get=function(t){var e=this.__data__;if(Q){var i=e[t];return"__lodash_hash_undefined__"===i?void 0:i}return K.call(e,t)?e[t]:void 0},te.prototype.has=function(t){var e=this.__data__;return Q?void 0!==e[t]:tt.call(e,t)},te.prototype.set=function(t,e){var i=this.__data__;return this.size+=+!this.has(t),i[t]=Q&&void 0===e?"__lodash_hash_undefined__":e,this};var ti=function(t){var e=typeof t;return"string"==e||"number"==e||"symbol"==e||"boolean"==e?"__proto__"!==t:null===t},tr=function(t,e){var i=t.__data__;return ti(e)?i["string"==typeof e?"string":"hash"]:i.map};function ts(t){var e=-1,i=null==t?0:t.length;for(this.clear();++e<i;){var r=t[e];this.set(r[0],r[1])}}function ta(t){var e=this.__data__=new $(t);this.size=e.size}ts.prototype.clear=function(){this.size=0,this.__data__={hash:new te,map:new(Z||$),string:new te}},ts.prototype.delete=function(t){var e=tr(this,t).delete(t);return this.size-=!!e,e},ts.prototype.get=function(t){return tr(this,t).get(t)},ts.prototype.has=function(t){return tr(this,t).has(t)},ts.prototype.set=function(t,e){var i=tr(this,t),r=i.size;return i.set(t,e),this.size+=+(i.size!=r),this},ta.prototype.clear=function(){this.__data__=new $,this.size=0},ta.prototype.delete=function(t){var e=this.__data__,i=e.delete(t);return this.size=e.size,i},ta.prototype.get=function(t){return this.__data__.get(t)},ta.prototype.has=function(t){return this.__data__.has(t)},ta.prototype.set=function(t,e){var i=this.__data__;if(i instanceof $){var r=i.__data__;if(!Z||r.length<199)return r.push([t,e]),this.size=++i.size,this;i=this.__data__=new ts(r)}return i.set(t,e),this.size=i.size,this};var to=function(){try{var t=G(Object,"defineProperty");return t({},"",{}),t}catch(t){}}(),tn=function(t,e,i){"__proto__"==e&&to?to(t,e,{configurable:!0,enumerable:!0,value:i,writable:!0}):t[e]=i},tl=function(t,e,i){(void 0===i||M(t[e],i))&&(void 0!==i||e in t)||tn(t,e,i)},tc=function(t,e,i){for(var r=-1,s=Object(t),a=i(t),o=a.length;o--;){var n=a[++r];if(!1===e(s[n],n,s))break}return t},th=w("dh6Qz"),C=w("cRGle"),td=C.default.Uint8Array,tu=function(t){var e=new t.constructor(t.byteLength);return new td(e).set(new td(t)),e},tf=function(t,e){var i=e?tu(t.buffer):t.buffer;return new t.constructor(i,t.byteOffset,t.length)},tp=function(t,e){var i=-1,r=t.length;for(e||(e=Array(r));++i<r;)e[i]=t[i];return e},tg=Object.create,tm=function(){function t(){}return function(e){if(!j(e))return{};if(tg)return tg(e);t.prototype=e;var i=new t;return t.prototype=void 0,i}}(),ty=(o=Object.getPrototypeOf,n=Object,function(t){return o(n(t))}),tb=Object.prototype,t_=function(t){var e=t&&t.constructor;return t===("function"==typeof e&&e.prototype||tb)},tv=function(t){return null!=t&&"object"==typeof t},tw=function(t){return tv(t)&&"[object Arguments]"==R(t)},tx=Object.prototype,tk=tx.hasOwnProperty,tM=tx.propertyIsEnumerable,tS=tw(function(){return arguments}())?tw:function(t){return tv(t)&&tk.call(t,"callee")&&!tM.call(t,"callee")},tA=Array.isArray,t$=function(t){return"number"==typeof t&&t>-1&&t%1==0&&t<=0x1fffffffffffff},tC=function(t){return null!=t&&t$(t.length)&&!I(t)},tE=w("aASW1"),tO=Object.prototype,tP=Function.prototype.toString,tz=tO.hasOwnProperty,tT=tP.call(Object),tD=function(t){if(!tv(t)||"[object Object]"!=R(t))return!1;var e=ty(t);if(null===e)return!0;var i=tz.call(e,"constructor")&&e.constructor;return"function"==typeof i&&i instanceof i&&tP.call(i)==tT},tF={};tF["[object Float32Array]"]=tF["[object Float64Array]"]=tF["[object Int8Array]"]=tF["[object Int16Array]"]=tF["[object Int32Array]"]=tF["[object Uint8Array]"]=tF["[object Uint8ClampedArray]"]=tF["[object Uint16Array]"]=tF["[object Uint32Array]"]=!0,tF["[object Arguments]"]=tF["[object Array]"]=tF["[object ArrayBuffer]"]=tF["[object Boolean]"]=tF["[object DataView]"]=tF["[object Date]"]=tF["[object Error]"]=tF["[object Function]"]=tF["[object Map]"]=tF["[object Number]"]=tF["[object Object]"]=tF["[object RegExp]"]=tF["[object Set]"]=tF["[object String]"]=tF["[object WeakMap]"]=!1;var tL=w("247iH"),tR=tL.default&&tL.default.isTypedArray,tj=tR?function(t){return tR(t)}:function(t){return tv(t)&&t$(t.length)&&!!tF[R(t)]},tI=function(t,e){if(("constructor"!==e||"function"!=typeof t[e])&&"__proto__"!=e)return t[e]},tW=Object.prototype.hasOwnProperty,tH=function(t,e,i){var r=t[e];tW.call(t,e)&&M(r,i)&&(void 0!==i||e in t)||tn(t,e,i)},tN=function(t,e,i,r){var s=!i;i||(i={});for(var a=-1,o=e.length;++a<o;){var n=e[a],l=r?r(i[n],t[n],n,i,t):void 0;void 0===l&&(l=t[n]),s?tn(i,n,l):tH(i,n,l)}return i},tV=function(t,e){for(var i=-1,r=Array(t);++i<t;)r[i]=e(i);return r},tE=w("aASW1"),tU=/^(?:0|[1-9]\d*)$/,tB=function(t,e){var i=typeof t;return!!(e=null==e?0x1fffffffffffff:e)&&("number"==i||"symbol"!=i&&tU.test(t))&&t>-1&&t%1==0&&t<e},tq=Object.prototype.hasOwnProperty,tX=function(t,e){var i=tA(t),r=!i&&tS(t),s=!i&&!r&&(0,tE.default)(t),a=!i&&!r&&!s&&tj(t),o=i||r||s||a,n=o?tV(t.length,String):[],l=n.length;for(var c in t)(e||tq.call(t,c))&&!(o&&("length"==c||s&&("offset"==c||"parent"==c)||a&&("buffer"==c||"byteLength"==c||"byteOffset"==c)||tB(c,l)))&&n.push(c);return n},tJ=function(t){var e=[];if(null!=t)for(var i in Object(t))e.push(i);return e},tY=Object.prototype.hasOwnProperty,tG=function(t){if(!j(t))return tJ(t);var e=t_(t),i=[];for(var r in t)"constructor"==r&&(e||!tY.call(t,r))||i.push(r);return i},tZ=function(t){return tC(t)?tX(t,!0):tG(t)},tQ=function(t,e,i,r,s,a,o){var n=tI(t,i),l=tI(e,i),c=o.get(l);if(c)return void tl(t,i,c);var h=a?a(n,l,i+"",t,e,o):void 0,d=void 0===h;if(d){var u=tA(l),f=!u&&(0,tE.default)(l),p=!u&&!f&&tj(l);(h=l,u||f||p)?tA(n)?h=n:tv(n)&&tC(n)?h=tp(n):f?(d=!1,h=(0,th.default)(l,!0)):p?(d=!1,h=tf(l,!0)):h=[]:tD(l)||tS(l)?(h=n,tS(n))?h=tN(n,tZ(n)):(!j(n)||I(n))&&(h="function"!=typeof l.constructor||t_(l)?{}:tm(ty(l))):d=!1}d&&(o.set(l,h),s(h,l,r,a,o),o.delete(l)),tl(t,i,h)},tK=function t(e,i,r,s,a){e!==i&&tc(i,function(o,n){if(a||(a=new ta),j(o))tQ(e,i,n,r,t,s,a);else{var l=s?s(tI(e,n),o,n+"",e,i,a):void 0;void 0===l&&(l=o),tl(e,n,l)}},tZ)},t0=function(t){return t},t1=function(t,e,i){switch(i.length){case 0:return t.call(e);case 1:return t.call(e,i[0]);case 2:return t.call(e,i[0],i[1]);case 3:return t.call(e,i[0],i[1],i[2])}return t.apply(e,i)},t2=Math.max,t5=Date.now,t4=(l=to?function(t,e){return to(t,"toString",{configurable:!0,enumerable:!1,value:function(){return e},writable:!0})}:t0,c=0,h=0,function(){var t=t5(),e=16-(t-h);if(h=t,e>0){if(++c>=800)return arguments[0]}else c=0;return l.apply(void 0,arguments)}),t6=function(t,e,i){if(!j(i))return!1;var r=typeof e;return("number"==r?!!(tC(i)&&tB(e,i.length)):"string"==r&&e in i)&&M(i[e],t)};var t3=(d=function(t,e,i){tK(t,e,i)},t4((r=function(t,e){var i=-1,r=e.length,s=r>1?e[r-1]:void 0,a=r>2?e[2]:void 0;for(s=d.length>3&&"function"==typeof s?(r--,s):void 0,a&&t6(e[0],e[1],a)&&(s=r<3?void 0:s,r=1),t=Object(t);++i<r;){var o=e[i];o&&d(t,o,i)}return t},s=t2((s=void 0,r.length-1),0),function(){for(var t=arguments,e=-1,i=t2(t.length-s,0),a=Array(i);++e<i;)a[e]=t[s+e];e=-1;for(var o=Array(s+1);++e<s;)o[e]=t[e];return o[s]=t0(a),t1(r,this,o)}),r+""));let t9=t=>(e,i)=>{void 0!==i?i.addInitializer(()=>{customElements.define(t,e)}):customElements.define(t,e)},t8=globalThis,t7=t8.ShadowRoot&&(void 0===t8.ShadyCSS||t8.ShadyCSS.nativeShadow)&&"adoptedStyleSheets"in Document.prototype&&"replace"in CSSStyleSheet.prototype,et=Symbol(),ee=new WeakMap;class ei{constructor(t,e,i){if(this._$cssResult$=!0,i!==et)throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");this.cssText=t,this.t=e}get styleSheet(){let t=this.o,e=this.t;if(t7&&void 0===t){let i=void 0!==e&&1===e.length;i&&(t=ee.get(e)),void 0===t&&((this.o=t=new CSSStyleSheet).replaceSync(this.cssText),i&&ee.set(e,t))}return t}toString(){return this.cssText}}let er=t=>new ei("string"==typeof t?t:t+"",void 0,et),es=(t,...e)=>new ei(1===t.length?t[0]:e.reduce((e,i,r)=>e+(t=>{if(!0===t._$cssResult$)return t.cssText;if("number"==typeof t)return t;throw Error("Value passed to 'css' function must be a 'css' function result: "+t+". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.")})(i)+t[r+1],t[0]),t,et),ea=t7?t=>t:t=>t instanceof CSSStyleSheet?(t=>{let e="";for(let i of t.cssRules)e+=i.cssText;return er(e)})(t):t,{is:eo,defineProperty:en,getOwnPropertyDescriptor:el,getOwnPropertyNames:ec,getOwnPropertySymbols:eh,getPrototypeOf:ed}=Object,eu=globalThis,ef=eu.trustedTypes,ep=ef?ef.emptyScript:"",eg=eu.reactiveElementPolyfillSupport,em={toAttribute(t,e){switch(e){case Boolean:t=t?ep:null;break;case Object:case Array:t=null==t?t:JSON.stringify(t)}return t},fromAttribute(t,e){let i=t;switch(e){case Boolean:i=null!==t;break;case Number:i=null===t?null:Number(t);break;case Object:case Array:try{i=JSON.parse(t)}catch(t){i=null}}return i}},ey=(t,e)=>!eo(t,e),eb={attribute:!0,type:String,converter:em,reflect:!1,useDefault:!1,hasChanged:ey};Symbol.metadata??=Symbol("metadata"),eu.litPropertyMetadata??=new WeakMap;class e_ extends HTMLElement{static addInitializer(t){this._$Ei(),(this.l??=[]).push(t)}static get observedAttributes(){return this.finalize(),this._$Eh&&[...this._$Eh.keys()]}static createProperty(t,e=eb){if(e.state&&(e.attribute=!1),this._$Ei(),this.prototype.hasOwnProperty(t)&&((e=Object.create(e)).wrapped=!0),this.elementProperties.set(t,e),!e.noAccessor){let i=Symbol(),r=this.getPropertyDescriptor(t,i,e);void 0!==r&&en(this.prototype,t,r)}}static getPropertyDescriptor(t,e,i){let{get:r,set:s}=el(this.prototype,t)??{get(){return this[e]},set(t){this[e]=t}};return{get:r,set(e){let a=r?.call(this);s?.call(this,e),this.requestUpdate(t,a,i)},configurable:!0,enumerable:!0}}static getPropertyOptions(t){return this.elementProperties.get(t)??eb}static _$Ei(){if(this.hasOwnProperty("elementProperties"))return;let t=ed(this);t.finalize(),void 0!==t.l&&(this.l=[...t.l]),this.elementProperties=new Map(t.elementProperties)}static finalize(){if(this.hasOwnProperty("finalized"))return;if(this.finalized=!0,this._$Ei(),this.hasOwnProperty("properties")){let t=this.properties;for(let e of[...ec(t),...eh(t)])this.createProperty(e,t[e])}let t=this[Symbol.metadata];if(null!==t){let e=litPropertyMetadata.get(t);if(void 0!==e)for(let[t,i]of e)this.elementProperties.set(t,i)}for(let[t,e]of(this._$Eh=new Map,this.elementProperties)){let i=this._$Eu(t,e);void 0!==i&&this._$Eh.set(i,t)}this.elementStyles=this.finalizeStyles(this.styles)}static finalizeStyles(t){let e=[];if(Array.isArray(t))for(let i of new Set(t.flat(1/0).reverse()))e.unshift(ea(i));else void 0!==t&&e.push(ea(t));return e}static _$Eu(t,e){let i=e.attribute;return!1===i?void 0:"string"==typeof i?i:"string"==typeof t?t.toLowerCase():void 0}constructor(){super(),this._$Ep=void 0,this.isUpdatePending=!1,this.hasUpdated=!1,this._$Em=null,this._$Ev()}_$Ev(){this._$ES=new Promise(t=>this.enableUpdating=t),this._$AL=new Map,this._$E_(),this.requestUpdate(),this.constructor.l?.forEach(t=>t(this))}addController(t){(this._$EO??=new Set).add(t),void 0!==this.renderRoot&&this.isConnected&&t.hostConnected?.()}removeController(t){this._$EO?.delete(t)}_$E_(){let t=new Map;for(let e of this.constructor.elementProperties.keys())this.hasOwnProperty(e)&&(t.set(e,this[e]),delete this[e]);t.size>0&&(this._$Ep=t)}createRenderRoot(){let t=this.shadowRoot??this.attachShadow(this.constructor.shadowRootOptions);return((t,e)=>{if(t7)t.adoptedStyleSheets=e.map(t=>t instanceof CSSStyleSheet?t:t.styleSheet);else for(let i of e){let e=document.createElement("style"),r=t8.litNonce;void 0!==r&&e.setAttribute("nonce",r),e.textContent=i.cssText,t.appendChild(e)}})(t,this.constructor.elementStyles),t}connectedCallback(){this.renderRoot??=this.createRenderRoot(),this.enableUpdating(!0),this._$EO?.forEach(t=>t.hostConnected?.())}enableUpdating(t){}disconnectedCallback(){this._$EO?.forEach(t=>t.hostDisconnected?.())}attributeChangedCallback(t,e,i){this._$AK(t,i)}_$ET(t,e){let i=this.constructor.elementProperties.get(t),r=this.constructor._$Eu(t,i);if(void 0!==r&&!0===i.reflect){let s=(void 0!==i.converter?.toAttribute?i.converter:em).toAttribute(e,i.type);this._$Em=t,null==s?this.removeAttribute(r):this.setAttribute(r,s),this._$Em=null}}_$AK(t,e){let i=this.constructor,r=i._$Eh.get(t);if(void 0!==r&&this._$Em!==r){let t=i.getPropertyOptions(r),s="function"==typeof t.converter?{fromAttribute:t.converter}:void 0!==t.converter?.fromAttribute?t.converter:em;this._$Em=r;let a=s.fromAttribute(e,t.type);this[r]=a??this._$Ej?.get(r)??a,this._$Em=null}}requestUpdate(t,e,i,r=!1,s){if(void 0!==t){let a=this.constructor;if(!1===r&&(s=this[t]),!(((i??=a.getPropertyOptions(t)).hasChanged??ey)(s,e)||i.useDefault&&i.reflect&&s===this._$Ej?.get(t)&&!this.hasAttribute(a._$Eu(t,i))))return;this.C(t,e,i)}!1===this.isUpdatePending&&(this._$ES=this._$EP())}C(t,e,{useDefault:i,reflect:r,wrapped:s},a){i&&!(this._$Ej??=new Map).has(t)&&(this._$Ej.set(t,a??e??this[t]),!0!==s||void 0!==a)||(this._$AL.has(t)||(this.hasUpdated||i||(e=void 0),this._$AL.set(t,e)),!0===r&&this._$Em!==t&&(this._$Eq??=new Set).add(t))}async _$EP(){this.isUpdatePending=!0;try{await this._$ES}catch(t){Promise.reject(t)}let t=this.scheduleUpdate();return null!=t&&await t,!this.isUpdatePending}scheduleUpdate(){return this.performUpdate()}performUpdate(){if(!this.isUpdatePending)return;if(!this.hasUpdated){if(this.renderRoot??=this.createRenderRoot(),this._$Ep){for(let[t,e]of this._$Ep)this[t]=e;this._$Ep=void 0}let t=this.constructor.elementProperties;if(t.size>0)for(let[e,i]of t){let{wrapped:t}=i,r=this[e];!0!==t||this._$AL.has(e)||void 0===r||this.C(e,void 0,i,r)}}let t=!1,e=this._$AL;try{(t=this.shouldUpdate(e))?(this.willUpdate(e),this._$EO?.forEach(t=>t.hostUpdate?.()),this.update(e)):this._$EM()}catch(e){throw t=!1,this._$EM(),e}t&&this._$AE(e)}willUpdate(t){}_$AE(t){this._$EO?.forEach(t=>t.hostUpdated?.()),this.hasUpdated||(this.hasUpdated=!0,this.firstUpdated(t)),this.updated(t)}_$EM(){this._$AL=new Map,this.isUpdatePending=!1}get updateComplete(){return this.getUpdateComplete()}getUpdateComplete(){return this._$ES}shouldUpdate(t){return!0}update(t){this._$Eq&&=this._$Eq.forEach(t=>this._$ET(t,this[t])),this._$EM()}updated(t){}firstUpdated(t){}}e_.elementStyles=[],e_.shadowRootOptions={mode:"open"},e_.elementProperties=new Map,e_.finalized=new Map,eg?.({ReactiveElement:e_}),(eu.reactiveElementVersions??=[]).push("2.1.2");let ev={attribute:!0,type:String,converter:em,reflect:!1,hasChanged:ey};function ew(t){return(e,i)=>{let r;return"object"==typeof i?((t=ev,e,i)=>{let{kind:r,metadata:s}=i,a=globalThis.litPropertyMetadata.get(s);if(void 0===a&&globalThis.litPropertyMetadata.set(s,a=new Map),"setter"===r&&((t=Object.create(t)).wrapped=!0),a.set(i.name,t),"accessor"===r){let{name:r}=i;return{set(i){let s=e.get.call(this);e.set.call(this,i),this.requestUpdate(r,s,t,!0,i)},init(e){return void 0!==e&&this.C(r,void 0,t,e),e}}}if("setter"===r){let{name:r}=i;return function(i){let s=this[r];e.call(this,i),this.requestUpdate(r,s,t,!0,i)}}throw Error("Unsupported decorator location: "+r)})(t,e,i):(r=e.hasOwnProperty(i),e.constructor.createProperty(i,t),r?Object.getOwnPropertyDescriptor(e,i):void 0)}}function ex(t){return ew({...t,state:!0,attribute:!1})}let ek=(t,e,i)=>(i.configurable=!0,i.enumerable=!0,Reflect.decorate&&"object"!=typeof e&&Object.defineProperty(t,e,i),i);function eM(t,e){return(i,r,s)=>{let a=e=>e.renderRoot?.querySelector(t)??null;if(e){let t,{get:e,set:o}="object"==typeof r?i:s??(t=Symbol(),{get(){return this[t]},set(e){this[t]=e}});return ek(i,r,{get(){let t=e.call(this);return void 0===t&&(null!==(t=a(this))||this.hasUpdated)&&o.call(this,t),t}})}return ek(i,r,{get(){return a(this)}})}}let eS=globalThis,eA=t=>t,e$=eS.trustedTypes,eC=e$?e$.createPolicy("lit-html",{createHTML:t=>t}):void 0,eE="$lit$",eO=`lit$${Math.random().toFixed(9).slice(2)}$`,eP="?"+eO,ez=`<${eP}>`,eT=document,eD=()=>eT.createComment(""),eF=t=>null===t||"object"!=typeof t&&"function"!=typeof t,eL=Array.isArray,eR="[ 	\n\f\r]",ej=/<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,eI=/-->/g,eW=/>/g,eH=RegExp(`>|${eR}(?:([^\\s"'>=/]+)(${eR}*=${eR}*(?:[^ 	
@@ -745,7 +745,7 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
 
   // Build marker — bump on every change. Confirm the LIVE file matches by
   // checking the browser console banner and the editor header.
-  const WFC_BUILD = "2026.08.15.79";
+  const WFC_BUILD = "2026.10.11.85";
 
   // ----- Section catalog -----------------------------------------------------
   const WFC_SECTIONS = [
@@ -1541,10 +1541,17 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
       const prev = changed.get("hass");
       const cur = this.hass;
       if (prev && cur) {
-        const ms = this.config.metric_sources || {};
+        // Re-render when any source entity's state changes (every entity any
+        // source could resolve to across the metric catalog), so borrowed
+        // current-state values stay live.
         const ids = new Set();
-        if (ms.fallback) ids.add(ms.fallback);
-        if (ms.custom) Object.values(ms.custom).forEach((e) => e && ids.add(e));
+        for (const src of this._wfcSources()) {
+          if (src.overrides) Object.values(src.overrides).forEach((e) => e && ids.add(e));
+          if (wfcIsDeviceRef(src.ref)) {
+            const m = wfcResolveDeviceMap(this.config, this.hass, wfcDeviceIdOf(src.ref));
+            Object.values(m).forEach((e) => e && ids.add(e));
+          } else if (src.ref) ids.add(src.ref);
+        }
         for (const eid of ids) {
           if (prev.states[eid] !== cur.states[eid]) return true;
         }
@@ -2068,28 +2075,209 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
     return eq`<div class="wfc-forecast-container" data-forecast-type=${type}>${inner}</div>`;
   };
 
-  // --- Weather Sources (per-metric entity sourcing) --------------------------
-  // Config: config.metric_sources = { primary, fallback, custom: {key: entity} }.
-  // Resolution order for a metric: custom[key] → primary → fallback → main entity.
-  // `primary` defaults to the card's main entity, so existing configs are
-  // unaffected. Units are NOT converted — each source's own value is shown.
+  // --- Device sources (local weather stations) -------------------------------
+  // A source slot (Primary / Fallback) may hold a DEVICE instead of a weather
+  // entity. Local stations (Ecowitt, Tempest, Davis, …) expose no weather.*
+  // entity — just a device with many flat sensor entities. A device ref is
+  // stored as the string "device:<device_id>" and is expanded, per metric, to
+  // the member sensor entity that best matches that metric. Devices supply
+  // CURRENT conditions only — no forecast and no weather condition.
+  const WFC_DEVICE_PREFIX = "device:";
+  const wfcIsDeviceRef = (s) => typeof s === "string" && s.indexOf(WFC_DEVICE_PREFIX) === 0;
+  const wfcDeviceIdOf = (s) => (wfcIsDeviceRef(s) ? s.slice(WFC_DEVICE_PREFIX.length) : null);
+
+  // Canonical metric catalog — the single source of truth for every metric the
+  // Weather Sources UI can map/override. Covers the standard weather-entity
+  // attributes PLUS local-station extras (solar radiation, illuminance, rain)
+  // that have no weather-entity equivalent. `key` is also the weather-entity
+  // attribute name where one exists. Used by the auto-mapper, the override UI,
+  // and availability annotation so they can never drift apart.
+  const WFC_METRIC_CATALOG = [
+    { key: "temperature", label: "Temperature" },
+    { key: "apparent_temperature", label: "Feels like" },
+    { key: "dew_point", label: "Dew point" },
+    { key: "humidity", label: "Humidity" },
+    { key: "pressure", label: "Pressure" },
+    { key: "wind_speed", label: "Wind speed" },
+    { key: "wind_gust_speed", label: "Wind gust" },
+    { key: "wind_bearing", label: "Wind bearing" },
+    { key: "visibility", label: "Visibility" },
+    { key: "cloud_coverage", label: "Cloud cover" },
+    { key: "uv_index", label: "UV index" },
+    { key: "ozone", label: "Ozone" },
+    // Local-station extras (not standard weather.* attributes).
+    { key: "solar_radiation", label: "Solar radiation", extra: true },
+    { key: "illuminance", label: "Illuminance / Lux", extra: true },
+    { key: "precipitation", label: "Rain / Precipitation", extra: true },
+  ];
+  // Metric keys a device can be auto-mapped to (every catalog key).
+  const WFC_DEVICE_METRIC_KEYS = WFC_METRIC_CATALOG.map((m) => m.key);
+
+  // id/friendly-name patterns, checked IN ORDER (first win) before falling back
+  // to device_class. Ordered so specific metrics (feels-like, dew point, gust,
+  // direction) resolve before the generic temperature/wind_speed catch.
+  const WFC_DEVICE_PATTERNS = [
+    { re: /feels[\s_-]?like|apparent|wind[\s_-]?chill|windchill/i, key: "apparent_temperature" },
+    { re: /dew[\s_-]?point/i, key: "dew_point" },
+    { re: /gust/i, key: "wind_gust_speed" },
+    { re: /wind[\s_-]?(direction|dir|bearing|azimuth|heading)/i, key: "wind_bearing" },
+    { re: /\buv(_?index)?\b/i, key: "uv_index" },
+    { re: /visibility/i, key: "visibility" },
+    { re: /ozone/i, key: "ozone" },
+    { re: /cloud/i, key: "cloud_coverage" },
+    { re: /solar[\s_-]?(radiation|irradiance)|irradiance/i, key: "solar_radiation" },
+    { re: /\blux\b|illuminance|solar[\s_-]?lux/i, key: "illuminance" },
+    { re: /rain[\s_-]?rate|precip/i, key: "precipitation" },
+    { re: /wind[\s_-]?speed/i, key: "wind_speed" },
+    { re: /humidity/i, key: "humidity" },
+  ];
+
+  // All entity ids registered to a device (via the frontend entity registry).
+  function wfcDeviceEntities(hass, deviceId) {
+    if (!hass || !deviceId || !hass.entities) return [];
+    const out = [];
+    for (const eid in hass.entities) {
+      const e = hass.entities[eid];
+      if (e && e.device_id === deviceId) out.push(eid);
+    }
+    return out;
+  }
+
+  // Classify a single device entity to a metric key, with a penalty used to
+  // break ties (lower is better). Returns null when it maps to nothing the card
+  // uses. Patterns win over device_class; indoor/averaged/absolute get penalized
+  // so outdoor/instantaneous/relative sources are preferred.
+  function wfcClassifyWeatherEntity(hass, eid) {
+    const st = hass && hass.states[eid];
+    if (!st) return null;
+    const dc = st.attributes && st.attributes.device_class;
+    const hay = (eid + " " + ((st.attributes && st.attributes.friendly_name) || "")).toLowerCase();
+    let key = null;
+    for (const p of WFC_DEVICE_PATTERNS) {
+      if (p.re.test(hay)) { key = p.key; break; }
+    }
+    if (!key) {
+      if (dc === "temperature") key = "temperature";
+      else if (dc === "humidity") key = "humidity";
+      else if (dc === "pressure" || dc === "atmospheric_pressure") key = "pressure";
+      else if (dc === "wind_speed") key = "wind_speed";
+      else if (dc === "irradiance") key = "solar_radiation";
+      else if (dc === "illuminance") key = "illuminance";
+      else if (dc === "precipitation_intensity") key = "precipitation";
+      else if (/(^|[\s_-])temperature/.test(hay)) key = "temperature";
+      else if (/pressure/.test(hay)) key = "pressure";
+    }
+    if (!key || WFC_DEVICE_METRIC_KEYS.indexOf(key) === -1) return null;
+    let pen = 0;
+    if (/indoor|inside/.test(hay)) pen += 100;
+    if (/avg|average|10m|max|daily|weekly|monthly|yearly|\bmin\b/.test(hay)) pen += 20;
+    if (key === "pressure") {
+      if (/deficit|vpd|vapou?r/.test(hay)) return null; // vapour-pressure-deficit ≠ barometric pressure
+      if (/absolute/.test(hay)) pen += 50;
+      if (/relative|sea/.test(hay)) pen -= 5;
+    }
+    // Precipitation: prefer the instantaneous rate over accumulation totals.
+    if (key === "precipitation") {
+      if (/rate/.test(hay)) pen -= 5;
+      if (/event|hourly|24h|total/.test(hay)) pen += 10;
+    }
+    return { key, penalty: pen };
+  }
+
+  // Auto-map a device to { metricKey: entity_id }, choosing the lowest-penalty
+  // candidate per metric.
+  function wfcAutoMapDevice(hass, deviceId) {
+    const map = {}, best = {};
+    for (const eid of wfcDeviceEntities(hass, deviceId)) {
+      const c = wfcClassifyWeatherEntity(hass, eid);
+      if (!c) continue;
+      if (best[c.key] == null || c.penalty < best[c.key]) { best[c.key] = c.penalty; map[c.key] = eid; }
+    }
+    return map;
+  }
+
+  // Resolved device map = auto-map overlaid with the user's per-device overrides
+  // stored at config.metric_sources.device_map[deviceId] = { metricKey: entity }.
+  function wfcResolveDeviceMap(config, hass, deviceId) {
+    const out = { ...wfcAutoMapDevice(hass, deviceId) };
+    const ov = (config && config.metric_sources && config.metric_sources.device_map && config.metric_sources.device_map[deviceId]) || {};
+    for (const k in ov) { if (ov[k]) out[k] = ov[k]; }
+    return out;
+  }
+
+  // --- Weather Sources (ordered priority list) -------------------------------
+  // The user configures an ORDERED list of sources; earlier = higher priority.
+  // Each source is { ref, overrides } where:
+  //   ref       = a weather entity id, a "device:<id>" ref, or any sensor entity
+  //   overrides = { metricKey: entity_id } redirecting individual metrics
+  // A metric resolves by walking the list in order: for each source, try its
+  // override entity for that metric, then the source's own entity (for a device,
+  // the auto-mapped member). First source with a non-null value wins. Units are
+  // NOT converted — each source's own value is shown.
+  //
+  // Canonical storage is config.metric_sources.sources (the array). For BACK-
+  // COMPAT, configs predating this model (with primary/fallback/custom/
+  // device_map, or just a bare entity) are synthesized into the same array shape
+  // on the fly, so existing production cards resolve identically until re-saved.
+  //
+  // Forecast & weather CONDITION always come from config.entity (the base card
+  // requires it and drives its forecast subscription from it); the editor keeps
+  // config.entity pointed at the highest-priority weather entity in the list.
+
+  // Pure: produce the normalized ordered source array from a config. `hass` is
+  // unused here but accepted for symmetry with the resolvers.
+  function wfcNormalizeSources(config, _hass) {
+    const ms = (config && config.metric_sources) || {};
+    if (Array.isArray(ms.sources)) {
+      return ms.sources
+        .filter((s) => s && s.ref)
+        .map((s) => ({ ref: s.ref, overrides: { ...(s.overrides || {}) }, disabled: !!s.disabled }));
+    }
+    // Synthesize from the legacy shape.
+    const out = [];
+    const dm = ms.device_map || {};
+    const custom = ms.custom || {};
+    const devOv = (ref) => (wfcIsDeviceRef(ref) ? { ...(dm[wfcDeviceIdOf(ref)] || {}) } : {});
+    const primary = ms.primary || (config && config.entity);
+    if (primary) out.push({ ref: primary, overrides: { ...devOv(primary), ...custom } });
+    if (ms.fallback && ms.fallback !== primary) out.push({ ref: ms.fallback, overrides: devOv(ms.fallback) });
+    return out;
+  }
+
   cardProto._wfcMetricSources = function () {
     return (this.config && this.config.metric_sources) || {};
   };
-  // The ordered list of candidate entity ids to try for a metric (most specific
-  // first), de-duped and filtered to entities that actually exist in hass.
-  // Order: Custom[key] → Primary (the required entity; legacy metric_sources
-  // .primary still honored if present) → Fallback.
+  cardProto._wfcSources = function () {
+    return wfcNormalizeSources(this.config, this.hass);
+  };
+  // Resolve a source-slot ref (weather entity id or device ref) to the concrete
+  // entity id that supplies `key`. A device ref expands via its resolved map; a
+  // plain entity id is returned as-is. null when a device has no entity for key.
+  cardProto._wfcSlotEntityForKey = function (ref, key) {
+    if (!ref) return null;
+    if (wfcIsDeviceRef(ref)) {
+      const m = wfcResolveDeviceMap(this.config, this.hass, wfcDeviceIdOf(ref));
+      return m[key] || null;
+    }
+    return ref;
+  };
+  // The ordered list of candidate entity ids to try for a metric (highest
+  // priority first), de-duped and filtered to entities that exist in hass. For
+  // each source: its override entity for the metric, then its own entity (device
+  // → auto-mapped member).
   cardProto._wfcMetricEntityChain = function (key) {
-    const ms = this._wfcMetricSources();
-    const primary = ms.primary || (this.config && this.config.entity);
     const chain = [];
     const add = (e) => {
       if (e && !chain.includes(e) && this.hass && this.hass.states[e]) chain.push(e);
     };
-    if (ms.custom && ms.custom[key]) add(ms.custom[key]);
-    add(primary);
-    add(ms.fallback);
+    for (const src of this._wfcSources()) {
+      if (src.disabled) continue; // hidden via the eye toggle — skip in resolution
+      if (src.overrides && src.overrides[key]) add(src.overrides[key]);
+      add(this._wfcSlotEntityForKey(src.ref, key));
+    }
+    // Safety net: the base entity is always a candidate of last resort (it is
+    // what the header/forecast fall back to even if it is absent from the list).
+    add(this.config && this.config.entity);
     return chain;
   };
   // Read a CURRENT-STATE metric value across the source chain. Returns the first
@@ -2124,43 +2312,57 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
     return null;
   };
 
-  // Build a shallow copy of the main weather entity whose attributes are gap-
-  // filled from Fallback/Custom sources, so the base <wfc-current-weather>
-  // header (secondary-info line + built-in metrics row) honors Weather Sources
-  // just like the metrics panel does. Raw attribute VALUES are copied (no unit
-  // conversion). Only fills attributes the main entity is missing (or that have
-  // an explicit Custom weather-entity source); never overwrites existing ones
-  // except for a Custom override. Returns the original object when nothing to
-  // merge, so normal setups are unaffected.
+  // Read a CURRENT-STATE metric as a RAW value (number/string, no formatting)
+  // from the first source in the resolution chain that has it. weather.* sources
+  // expose the metric as an attribute; any other (device member / user) sensor
+  // supplies its state. Mirrors _wfcCurrentMetric but returns the raw value so it
+  // can be written back into a weather-entity attribute for the base header.
+  cardProto._wfcCurrentMetricRaw = function (key) {
+    if (!this.hass) return null;
+    for (const eid of this._wfcMetricEntityChain(key)) {
+      const st = this.hass.states[eid];
+      if (!st) continue;
+      if (eid.startsWith("weather.")) {
+        const v = st.attributes ? st.attributes[key] : null;
+        if (v != null && v !== "") return v;
+      } else {
+        const raw = st.state;
+        if (raw != null && raw !== "" && raw !== "unknown" && raw !== "unavailable") {
+          const n = Number(raw);
+          return isNaN(n) ? raw : n;
+        }
+      }
+    }
+    return null;
+  };
+
+  // Build a shallow copy of the main weather entity whose attributes are resolved
+  // through the Weather Sources chain (custom → primary → fallback → main), so the
+  // base <wfc-current-weather> header (headline temperature, secondary-info line,
+  // and built-in metrics row) honors Weather Sources exactly like the metrics
+  // panel does. Raw VALUES are copied (no unit conversion). `temperature` is
+  // included so a Primary device/entity drives the headline number too. Returns
+  // the original object when no source would change anything, so normal setups
+  // are unaffected.
   cardProto._wfcMergedCurrentEntity = function (stateObj) {
     try {
       if (!stateObj || !stateObj.attributes) return stateObj;
-      const ms = this._wfcMetricSources();
       const main = this.config && this.config.entity;
-      const custom = ms.custom || {};
-      const fallback = ms.fallback && ms.fallback !== main ? ms.fallback : null;
-      if (!fallback && !Object.keys(custom).length) return stateObj;
+      const sources = this._wfcSources();
+      // Only config.entity (or nothing) configured → no source could redirect a
+      // header value, so leave the entity untouched (normal single-source setups).
+      const canRedirect = sources.some((s) => s.ref !== main || (s.overrides && Object.keys(s.overrides).length));
+      if (!canRedirect) return stateObj;
 
       const attrs = { ...stateObj.attributes };
       let changed = false;
-      // Metrics the header can display (built-in current attributes).
-      const keys = typeof iX !== "undefined" ? iX : [];
+      // Headline temperature plus the built-in current-metric catalog. The chain
+      // already encodes precedence (custom → primary → fallback), with the main
+      // entity's own attribute kept when no higher source supplies the metric.
+      const keys = ["temperature", ...(typeof iX !== "undefined" ? iX : [])];
       for (const key of keys) {
-        // Custom weather-entity source overrides; else Fallback fills a gap.
-        const customEid = custom[key] && custom[key].startsWith("weather.") ? custom[key] : null;
-        if (customEid) {
-          const st = this.hass.states[customEid];
-          if (st && st.attributes && st.attributes[key] != null) {
-            attrs[key] = st.attributes[key];
-            changed = true;
-          }
-        } else if (fallback && attrs[key] == null) {
-          const st = this.hass.states[fallback];
-          if (st && st.attributes && st.attributes[key] != null) {
-            attrs[key] = st.attributes[key];
-            changed = true;
-          }
-        }
+        const v = this._wfcCurrentMetricRaw(key);
+        if (v != null && v !== attrs[key]) { attrs[key] = v; changed = true; }
       }
       if (!changed) return stateObj;
       return { ...stateObj, attributes: attrs };
@@ -2319,18 +2521,21 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
   // Everything here is defensive: any failure falls back to the primary series
   // unchanged, so forecast display can never be worse than before.
 
-  // The set of EXTRA weather entities (besides the main one) referenced by
-  // Fallback or Custom sources — these need their own forecast subscriptions.
+  // The set of EXTRA weather entities (besides the main one) referenced by the
+  // source list — these need their own forecast subscriptions. Only weather.*
+  // entities carry a forecast; devices/sensors are current-state only and are
+  // skipped here.
   cardProto._wfcExtraForecastEntities = function () {
-    const ms = this._wfcMetricSources();
     const main = this.config && this.config.entity;
     const set = new Set();
     const add = (e) => {
-      if (e && e !== main && e.startsWith("weather.") && this.hass && this.hass.states[e]) set.add(e);
+      if (e && e !== main && typeof e === "string" && e.startsWith("weather.") && this.hass && this.hass.states[e]) set.add(e);
     };
-    add(ms.primary); // legacy: an explicit primary different from main
-    add(ms.fallback);
-    if (ms.custom) Object.values(ms.custom).forEach(add);
+    for (const src of this._wfcSources()) {
+      if (src.disabled) continue; // hidden sources don't need a forecast subscription
+      add(src.ref);
+      if (src.overrides) Object.values(src.overrides).forEach(add);
+    }
     return [...set];
   };
 
@@ -2399,15 +2604,16 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
     return rec ? rec[type] || null : null;
   };
 
-  // Merge per-metric values from Fallback/Custom sources onto the primary
-  // forecast series, aligning entries by nearest datetime (within 90 min).
-  // Only fills a metric on an entry when the primary lacks it OR a Custom
-  // source is explicitly set for that metric. Returns a NEW array (primary
-  // untouched); returns primary as-is when there's nothing to merge.
+  // Merge per-metric forecast values onto the primary (config.entity) series,
+  // honoring the Weather Sources priority order. For each metric at each
+  // timeslot, the highest-priority weather source that has a value wins — exactly
+  // mirroring the current-state chain, so forecast and current conditions agree.
+  // The base series itself represents config.entity, so a higher-priority source
+  // overrides it and a lower-priority one only fills gaps. Returns a NEW array
+  // (primary untouched); returns primary as-is when there's nothing to merge.
   cardProto._wfcMergeForecast = function (primary, type) {
     try {
       if (!Array.isArray(primary) || !primary.length) return primary;
-      const ms = this._wfcMetricSources();
       const main = this.config && this.config.entity;
       const extras = this._wfcExtraForecastEntities();
       if (!extras.length) return primary;
@@ -2435,29 +2641,30 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
         return bd <= 90 * 60000 ? best : null;
       };
 
-      // For each metric that has a Custom source, or that Fallback can fill.
-      const custom = ms.custom || {};
-      const fallback = ms.fallback && ms.fallback !== main ? ms.fallback : null;
-      const metricKeys = new Set([...Object.keys(custom), ...WFC_SOURCE_METRICS]);
+      // Per metric, the ordered weather entities to consult (priority order).
+      // `main` marks "use the base series value already in fc"; any extra entity
+      // earlier in the chain overrides it.
+      const metricKeys = WFC_METRIC_CATALOG.map((m) => m.key);
+      const chains = {};
+      metricKeys.forEach((key) => {
+        chains[key] = this._wfcMetricEntityChain(key).filter((e) => e === main || srcSeries[e]);
+      });
 
       return primary.map((fc) => {
         const t = new Date(fc.datetime).getTime();
         if (isNaN(t)) return fc;
         let out = fc;
         metricKeys.forEach((key) => {
-          const customEid = custom[key] && custom[key].startsWith("weather.") ? custom[key] : null;
-          // Custom weather source ALWAYS overrides; else Fallback only fills gaps.
-          if (customEid) {
-            const sfc = nearest(customEid, t);
-            if (sfc && sfc[key] != null) {
-              if (out === fc) out = { ...fc };
-              out[key] = sfc[key];
+          for (const eid of chains[key]) {
+            if (eid === main) {
+              if (fc[key] != null) break; // base already supplies it; highest wins
+              continue;
             }
-          } else if (fallback && (fc[key] == null)) {
-            const sfc = nearest(fallback, t);
+            const sfc = nearest(eid, t);
             if (sfc && sfc[key] != null) {
               if (out === fc) out = { ...fc };
               out[key] = sfc[key];
+              break;
             }
           }
         });
@@ -3735,91 +3942,134 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
     `;
   };
 
-  // Metrics offered a per-metric "Custom" source override (current-state
-  // catalog). Label pulled from WFC_DETAILS.
-  const WFC_SOURCE_METRICS = ["temperature", "apparent_temperature", "humidity", "pressure", "wind_speed", "wind_gust_speed", "wind_bearing", "visibility", "dew_point", "uv_index", "cloud_coverage", "ozone"];
-  const WFC_SOURCE_METRIC_LABELS = {
-    temperature: "Temperature",
-    apparent_temperature: "Feels like",
-    humidity: "Humidity",
-    pressure: "Pressure",
-    wind_speed: "Wind speed",
-    wind_gust_speed: "Wind gust",
-    wind_bearing: "Wind bearing",
-    visibility: "Visibility",
-    dew_point: "Dew point",
-    uv_index: "UV index",
-    cloud_coverage: "Cloud cover",
-    ozone: "Ozone",
+  // Max number of sources the UI lets you stack (soft cap — "add" disables past
+  // this; blending more than a few weather sources is rare and clutters the UI).
+  const WFC_MAX_SOURCES = 4;
+
+  // --- Ordered source-list editing ------------------------------------------
+  // Read the normalized source array for editing (same shape the card resolves).
+  edProto._wfcEdSources = function () {
+    return wfcNormalizeSources(this._config, this.hass);
+  };
+  // Commit a new source array to config.metric_sources.sources, and keep
+  // config.entity pointed at the highest-priority forecast-capable weather
+  // entity (the base card requires a weather entity there and drives its
+  // forecast + condition from it). Legacy primary/fallback/custom/device_map
+  // keys are dropped once we write the canonical array.
+  edProto._wfcCommitSources = function (sources) {
+    const clean = sources.filter((s) => s && s.ref).map((s) => {
+      const o = {};
+      for (const k in s.overrides || {}) if (s.overrides[k]) o[k] = s.overrides[k];
+      const out = { ref: s.ref };
+      if (Object.keys(o).length) out.overrides = o;
+      if (s.disabled) out.disabled = true;
+      return out;
+    });
+    const ms = { ...(this._config.metric_sources || {}) };
+    delete ms.primary; delete ms.fallback; delete ms.custom; delete ms.device_map;
+    if (clean.length) ms.sources = clean;
+    else delete ms.sources;
+    const config = { ...this._config, metric_sources: ms };
+    // Derive config.entity = first ENABLED weather entity in priority order
+    // (prefer a forecast-capable one); fall back to a disabled one only if no
+    // enabled weather entity exists. Never clear it — the base card requires it.
+    const hasForecast = (eid) => {
+      const st = this.hass && this.hass.states[eid];
+      const sf = st && st.attributes && st.attributes.supported_features;
+      return typeof sf === "number" && (sf & 7) !== 0;
+    };
+    const weatherOf = (list) => list.map((s) => s.ref).filter((r) => typeof r === "string" && r.startsWith("weather."));
+    const enabled = weatherOf(clean.filter((s) => !s.disabled));
+    const anyW = weatherOf(clean);
+    const derived = enabled.find(hasForecast) || enabled[0] || anyW.find(hasForecast) || anyW[0];
+    if (derived) config.entity = derived;
+    if (Object.keys(ms).length === 0) delete config.metric_sources;
+    ih(this, "config-changed", { config });
+  };
+  edProto._wfcSetSourceRef = function (i, ref) {
+    const sources = this._wfcEdSources();
+    if (!sources[i]) return;
+    if (!ref) { sources.splice(i, 1); }
+    else { sources[i] = { ref, overrides: sources[i].overrides || {} }; }
+    this._wfcCommitSources(sources);
+  };
+  edProto._wfcAddSource = function (ref) {
+    if (!ref) return;
+    const sources = this._wfcEdSources();
+    if (sources.length >= WFC_MAX_SOURCES) return;
+    sources.push({ ref, overrides: {} });
+    this._wfcCommitSources(sources);
+  };
+  edProto._wfcMoveSource = function (i, dir) {
+    const sources = this._wfcEdSources();
+    const j = i + dir;
+    if (i < 0 || j < 0 || j >= sources.length) return;
+    const t = sources[i]; sources[i] = sources[j]; sources[j] = t;
+    this._wfcCommitSources(sources);
+  };
+  edProto._wfcRemoveSource = function (i) {
+    const sources = this._wfcEdSources();
+    if (i < 0 || i >= sources.length) return;
+    sources.splice(i, 1);
+    this._wfcCommitSources(sources);
+  };
+  // Toggle a source's enabled/disabled (hidden) state via the eye icon. A
+  // disabled source stays in the list and keeps its mapping, but is skipped
+  // during resolution and forecast subscription.
+  edProto._wfcToggleSourceDisabled = function (i) {
+    const sources = this._wfcEdSources();
+    if (!sources[i]) return;
+    sources[i].disabled = !sources[i].disabled;
+    this._wfcCommitSources(sources);
+  };
+  // Set/clear a per-metric override entity on source i. "" clears it.
+  edProto._wfcSetSourceOverride = function (i, key, entity) {
+    const sources = this._wfcEdSources();
+    if (!sources[i]) return;
+    const ov = { ...(sources[i].overrides || {}) };
+    if (entity) ov[key] = entity; else delete ov[key];
+    sources[i].overrides = ov;
+    this._wfcCommitSources(sources);
   };
 
-  // Set a metric_sources.* field (primary / fallback). "" clears it.
-  edProto._wfcSetSource = function (field, value) {
-    const ms = { ...(this._config.metric_sources || {}) };
-    if (value == null || value === "") delete ms[field];
-    else ms[field] = value;
-    ih(this, "config-changed", { config: { ...this._config, metric_sources: ms } });
-  };
-  // Set a per-metric custom source entity. "" clears it (falls back to
-  // primary/fallback for that metric).
-  edProto._wfcSetCustomSource = function (key, value) {
-    const ms = { ...(this._config.metric_sources || {}) };
-    const custom = { ...(ms.custom || {}) };
-    if (value == null || value === "") delete custom[key];
-    else custom[key] = value;
-    if (Object.keys(custom).length) ms.custom = custom;
-    else delete ms.custom;
-    ih(this, "config-changed", { config: { ...this._config, metric_sources: ms } });
-  };
-
-  // "Weather Sources" panel: all entity selectors in one place —
-  //   • Primary Weather Source (the required base entity) + custom temperature
-  //     entity (relocated stock fields),
-  //   • Fallback Weather Source (weather entity),
-  //   • per-metric Custom overrides (any entity — weather or your own sensor),
-  //     in a collapsible group.
-  // Resolution order per metric: Custom → Primary (the required entity) →
-  // Fallback → blank.
-  // Inline warning shown under a source picker when the chosen entity is
-  // missing/unavailable, or (for weather entities) exposes no forecast.
-  edProto._wfcSourceWarning = function (eid) {
-    if (!eid) return eY;
+  // A short, formatted live value for an entity's metric — for inline preview
+  // next to a mapping row. weather.* reads the attribute; others read state.
+  edProto._wfcLiveValue = function (eid, key) {
     const st = this.hass && this.hass.states[eid];
-    if (!st) return eq`<p class="wfc-src-warn">⚠ Entity not found: ${eid}</p>`;
-    if (st.state === "unavailable" || st.state === "unknown")
-      return eq`<p class="wfc-src-warn">⚠ ${eid} is currently ${st.state}.</p>`;
+    if (!st) return "";
+    let raw, unit;
     if (eid.startsWith("weather.")) {
-      const sf = st.attributes && st.attributes.supported_features;
-      // Bit flags: 1=forecast_daily, 2=hourly, 4=twice_daily.
-      if (typeof sf === "number" && (sf & 7) === 0)
-        return eq`<p class="wfc-src-warn">⚠ ${eid} provides no forecast — only current-state metrics will be sourced from it.</p>`;
+      raw = st.attributes ? st.attributes[key] : null;
+      unit = st.attributes && st.attributes[key + "_unit"];
+    } else {
+      raw = st.state;
+      unit = st.attributes && st.attributes.unit_of_measurement;
     }
-    return eY;
+    if (raw == null || raw === "" || raw === "unknown" || raw === "unavailable") return "";
+    return unit ? `${raw} ${unit}` : `${raw}`;
   };
 
-  // Set of metric keys ANY configured source can actually provide — from
-  // current-state attributes of the Primary/Fallback/Custom entities, plus the
-  // main + extra forecast series. Used to annotate metric dropdowns so options
-  // that no source publishes are marked "(unavailable)".
+
+  // Set of metric keys ANY configured source can actually provide — device
+  // auto-maps + current-state attributes of every source entity + forecast
+  // series. Marks metric dropdown options that no source publishes.
   edProto._wfcAvailableMetrics = function () {
     const avail = new Set();
     if (!this.hass) return avail;
-    const ms = this._config.metric_sources || {};
     const ids = new Set();
     if (this._config.entity) ids.add(this._config.entity);
-    if (ms.primary) ids.add(ms.primary);
-    if (ms.fallback) ids.add(ms.fallback);
-    if (ms.custom) Object.values(ms.custom).forEach((e) => e && ids.add(e));
-    // Current-state attributes on each source entity.
+    for (const src of this._wfcEdSources()) {
+      if (src.disabled) continue;
+      if (src.overrides) Object.keys(src.overrides).forEach((k) => { avail.add(k); ids.add(src.overrides[k]); });
+      if (wfcIsDeviceRef(src.ref)) {
+        const m = wfcResolveDeviceMap(this._config, this.hass, wfcDeviceIdOf(src.ref));
+        Object.keys(m).forEach((k) => { avail.add(k); ids.add(m[k]); });
+      } else if (src.ref) ids.add(src.ref);
+    }
     ids.forEach((eid) => {
       const st = this.hass.states[eid];
       if (st && st.attributes) Object.keys(st.attributes).forEach((k) => avail.add(k));
-      // A non-weather sensor supplies its own single state as its keyed metric.
-      if (eid && !eid.startsWith("weather.") && ms.custom) {
-        Object.keys(ms.custom).forEach((k) => { if (ms.custom[k] === eid) avail.add(k); });
-      }
     });
-    // Attributes present in any forecast entry (main + extra source series).
     const scanFc = (arr) => {
       if (Array.isArray(arr)) for (const fc of arr) if (fc) Object.keys(fc).forEach((k) => avail.add(k));
     };
@@ -3873,48 +4123,315 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
     return opts;
   };
 
-  edProto._wfcWeatherSourcesPanel = function () {
-    const ms = this._config.metric_sources || {};
-    const custom = ms.custom || {};
-    const customCount = Object.keys(custom).length;
-    // One ha-form per entity picker (ha-form is used throughout and reliably
-    // renders HA's entity selector; ha-selector isn't guaranteed registered).
-    const picker = (name, label, value, onChange, domainWeather) => {
-      const schema = [{ name, selector: { entity: domainWeather ? { domain: "weather" } : {} } }];
+  // Resolved device-mapping editor: one row per weather metric, showing the
+  // auto-mapped member entity (or an override) with an entity picker scoped to
+  // the device's own entities. Lets the user correct the auto-map (e.g. choose
+  // indoor vs outdoor, relative vs absolute pressure).
+  // Expanded per-source mapping: one row per metric showing which entity feeds
+  // it (auto-mapped for devices; the source's own entity otherwise) with its
+  // live value, plus an override picker. Point 2 of the redesign: "show what
+  // entities map to what values" for every source.
+  edProto._wfcSourceMappingEditor = function (i, src) {
+    const ref = src.ref;
+    const ov = src.overrides || {};
+    const isDevice = wfcIsDeviceRef(ref);
+    const did = isDevice ? wfcDeviceIdOf(ref) : null;
+    const auto = isDevice ? wfcAutoMapDevice(this.hass, did) : {};
+    // Default (non-override) entity for a metric from this source.
+    const defEntity = (key) => {
+      if (isDevice) return auto[key] || "";
+      if (!ref) return "";
+      // A weather entity provides a metric iff it exposes that attribute; a plain
+      // sensor provides exactly one metric (its state) — shown for all keys but
+      // only meaningful for the one the user maps.
+      if (ref.startsWith("weather.")) {
+        const st = this.hass && this.hass.states[ref];
+        return st && st.attributes && st.attributes[key] != null ? ref : "";
+      }
+      return ""; // plain sensor: only via an explicit override
+    };
+    // Entity picker scope: device → its own members; else any entity.
+    const scope = isDevice ? { include_entities: wfcDeviceEntities(this.hass, did) } : {};
+    const row = (m) => {
+      const key = m.key;
+      const resolved = ov[key] || defEntity(key);
+      const overridden = !!ov[key];
+      const live = resolved ? this._wfcLiveValue(resolved, key) : "";
+      const schema = [{ name: "e", selector: { entity: scope } }];
+      const tag = overridden ? " (override)" : resolved ? "" : " — none";
       return eq`
-        <ha-form
-          .hass=${this.hass}
-          .data=${{ [name]: value || "" }}
-          .schema=${schema}
-          .computeLabel=${() => label}
-          @value-changed=${(e) => onChange((e.detail && e.detail.value && e.detail.value[name]) || "")}
-        ></ha-form>
-        ${this._wfcSourceWarning(value)}
+        <div class="wfc-srcmap-row">
+          <ha-form
+            .hass=${this.hass}
+            .data=${{ e: resolved }}
+            .schema=${schema}
+            .computeLabel=${() => m.label + tag}
+            @value-changed=${(e) => this._wfcSetSourceOverride(i, key, (e.detail && e.detail.value && e.detail.value.e) || "")}
+          ></ha-form>
+          <span class="wfc-srcmap-live">${live || "—"}</span>
+        </div>
       `;
     };
     return eq`
-      <details class="wfc-panel"><summary class="wfc-panel-summary"><ha-icon class="wfc-panel-icon" icon="mdi:database-marker-outline"></ha-icon><span class="wfc-panel-title">Weather Sources</span></summary>
-        <div class="wfc-ed-panel">
-          <p class="wfc-hint">Where each metric's data comes from. A metric resolves in order: its Custom source (if set) → Primary Weather Source → Fallback Weather Source. Units are shown as each source reports them (no conversion).</p>
-          ${this._wfcStockFormFor(["entity", "current.temperature_entity"])}
-          ${this._wfcGroup("Fallback")}
-          ${picker("fallback", "Fallback Weather Source (used when the Primary lacks a metric)", ms.fallback, (v) => this._wfcSetSource("fallback", v), true)}
-          ${this._wfcGroup()}
-          <details class="wfc-detail-row2 wfc-src-custom">
-            <summary class="wfc-detail-summary">
-              <ha-icon class="wfc-detail-glyph" icon="mdi:tune-variant"></ha-icon>
-              <span class="wfc-order-name">Custom per-metric sources${customCount ? ` (${customCount} set)` : ""}</span>
-            </summary>
-            <div class="wfc-detail-fields">
-              <p class="wfc-hint wfc-grow">Optional. Override an individual metric to a specific entity — e.g. your own sensor, or a more accurate source. Any entity is allowed; non-weather sensors supply current-state only.</p>
-              ${WFC_SOURCE_METRICS.map((key) =>
-                picker("custom_" + key, WFC_SOURCE_METRIC_LABELS[key] || key, custom[key], (v) => this._wfcSetCustomSource(key, v), false)
-              )}
-            </div>
-          </details>
+      <details class="wfc-detail-row2 wfc-src-devicemap">
+        <summary class="wfc-detail-summary">
+          <ha-icon class="wfc-detail-glyph" icon="mdi:map-marker-path"></ha-icon>
+          <span class="wfc-order-name">Value mapping${isDevice ? " (auto-detected)" : ""}</span>
+        </summary>
+        <div class="wfc-detail-fields">
+          <p class="wfc-hint wfc-grow">${isDevice
+            ? "How this device's sensors map to each value. Auto-detected from device class and name; pick a different entity to override. Blank = this source doesn't provide it."
+            : "Which value this source provides. By default a weather entity provides every attribute it exposes; override any value to a different entity (e.g. your own sensor)."}</p>
+          ${WFC_METRIC_CATALOG.map(row)}
         </div>
       </details>
     `;
+  };
+
+  // Condensed, read-only summary of a source's resolved values: one compact line
+  // per mapped metric — "Property · entity · value". Always visible on the row
+  // (unlike the editable mapping, which is behind the ✎ edit toggle), so you can
+  // see at a glance what each source actually provides.
+  edProto._wfcSourceSummaryList = function (src) {
+    const ref = src.ref;
+    const ov = src.overrides || {};
+    const isDevice = wfcIsDeviceRef(ref);
+    const auto = isDevice ? wfcAutoMapDevice(this.hass, wfcDeviceIdOf(ref)) : {};
+    const entityFor = (key) => {
+      if (ov[key]) return ov[key];
+      if (isDevice) return auto[key] || "";
+      if (ref && ref.startsWith("weather.")) {
+        const st = this.hass && this.hass.states[ref];
+        return st && st.attributes && st.attributes[key] != null ? ref : "";
+      }
+      return "";
+    };
+    const rows = [];
+    WFC_METRIC_CATALOG.forEach((m) => {
+      const eid = entityFor(m.key);
+      if (!eid) return;
+      const live = this._wfcLiveValue(eid, m.key);
+      rows.push(eq`
+        <div class="wfc-cond-row">
+          <span class="wfc-cond-prop">${m.label}</span>
+          <span class="wfc-cond-ent" title=${eid}>${eid}</span>
+          <span class="wfc-cond-val">${live || "—"}</span>
+        </div>
+      `);
+    });
+    if (!rows.length) return eY;
+    return eq`<div class="wfc-cond-list">${rows}</div>`;
+  };
+
+  // Transient (non-config) UI state: which source rows have their value-mapping
+  // expanded (keyed by source ref so it survives reorders), and whether the
+  // "+ Add Source" pickers are revealed. Mirrors the __wfcOpenPanels pattern.
+  edProto._wfcSrcMapOpen = function () {
+    if (!this.__wfcSrcMapOpen) this.__wfcSrcMapOpen = new Set();
+    return this.__wfcSrcMapOpen;
+  };
+  edProto._wfcToggleSrcMap = function (ref) {
+    const s = this._wfcSrcMapOpen();
+    if (s.has(ref)) s.delete(ref); else s.add(ref);
+    this.requestUpdate && this.requestUpdate();
+  };
+  edProto._wfcToggleAddSource = function () {
+    this.__wfcAddSourceOpen = !this.__wfcAddSourceOpen;
+    this.requestUpdate && this.requestUpdate();
+  };
+
+  // Count how many catalog values this source actually resolves to (device
+  // auto-map + overrides; weather entity = exposed attributes + overrides; plain
+  // sensor = its overrides). Used for the "N values mapped" info line.
+  edProto._wfcSourceMetricCount = function (src) {
+    const ref = src.ref;
+    const ov = src.overrides || {};
+    const keys = new Set(Object.keys(ov).filter((k) => ov[k]));
+    if (wfcIsDeviceRef(ref)) {
+      Object.keys(wfcResolveDeviceMap(this._config, this.hass, wfcDeviceIdOf(ref))).forEach((k) => keys.add(k));
+    } else if (ref && ref.startsWith("weather.")) {
+      const st = this.hass && this.hass.states[ref];
+      if (st && st.attributes) WFC_METRIC_CATALOG.forEach((m) => { if (st.attributes[m.key] != null) keys.add(m.key); });
+    }
+    return keys.size;
+  };
+
+  // One source row (design-system "Section rows"), three lines:
+  //   1. lead icon (theme-default color) + name + source-type badge, then the
+  //      action icons right-aligned: up/down (mdi:arrow-*-bold), edit (mdi:pencil,
+  //      toggles the value mapping), delete (mdi:trash-can-outline, red on hover).
+  //   2. what the source provides + how many values it maps (the "forecast +"
+  //      pill style, blue), right-sized.
+  //   3. additional info / caveats (muted).
+  // Sources are NOT numbered. The value mapping shows below when edit is active.
+  edProto._wfcSourceRow = function (src, i, count) {
+    const ref = src.ref;
+    const isDevice = wfcIsDeviceRef(ref);
+    const main = this._config.entity;
+    const dev = isDevice && this.hass && this.hass.devices && this.hass.devices[wfcDeviceIdOf(ref)];
+    const label = isDevice ? ((dev && (dev.name_by_user || dev.name)) || wfcDeviceIdOf(ref)) : ref;
+    const type = isDevice ? "Device" : ref && ref.startsWith("weather.") ? "Weather" : "Sensor";
+    const leadIcon = isDevice ? "mdi:access-point" : ref && ref.startsWith("weather.") ? "mdi:weather-partly-cloudy" : "mdi:gauge";
+    const isWeather = !isDevice && ref && ref.startsWith("weather.");
+    // Supplies forecast + condition iff it is the derived base entity.
+    const isForecastProvider = isWeather && ref === main;
+    const open = this._wfcSrcMapOpen().has(ref);
+    const disabled = !!src.disabled;
+    const n = this._wfcSourceMetricCount(src);
+    const vals = `${n} value${n === 1 ? "" : "s"} mapped`;
+
+    // Row 2 — what it provides (pill) + value count.
+    const providesPill = isForecastProvider
+      ? eq`<span class="wfc-src-pill" title="Supplies the forecast and weather condition">📡 forecast + condition</span>`
+      : isWeather
+      ? eq`<span class="wfc-src-pill" title="Supplies current + forecast metrics (not the card's condition)">current + forecast</span>`
+      : eq`<span class="wfc-src-pill" title="Supplies current conditions only">current conditions</span>`;
+
+    // Row 3 — additional info / caveats.
+    let detail = "";
+    const st = ref && !isDevice ? this.hass && this.hass.states[ref] : null;
+    if (isDevice) {
+      detail = n ? "Local station — no forecast or weather condition. Keep a weather entity in the list for those." : `No entities matched known weather metrics — map them with the edit (✎) button.`;
+    } else if (!st) {
+      detail = `⚠ Entity not found: ${ref}`;
+    } else if (st.state === "unavailable" || st.state === "unknown") {
+      detail = `⚠ Currently ${st.state}.`;
+    } else if (isWeather && !isForecastProvider) {
+      const sf = st.attributes && st.attributes.supported_features;
+      detail = typeof sf === "number" && (sf & 7) === 0
+        ? "Provides no forecast — current-state values only."
+        : "Fills values the higher-priority sources don't provide.";
+    } else if (!isWeather) {
+      detail = "Single sensor — supplies one value (set it with the edit (✎) button).";
+    }
+
+    return eq`
+      <div class="wfc-src-row ${disabled ? "wfc-src-off" : ""}">
+        <div class="wfc-src-head">
+          <ha-icon class="wfc-src-lead" icon=${leadIcon}></ha-icon>
+          <span class="wfc-src-name">${label} <span class="wfc-src-type">${type}</span></span>
+          <ha-icon class="wfc-ico-btn ${i === 0 ? "disabled" : ""}" icon="mdi:arrow-up-bold" title="Higher priority" @click=${() => this._wfcMoveSource(i, -1)}></ha-icon>
+          <ha-icon class="wfc-ico-btn ${i === count - 1 ? "disabled" : ""}" icon="mdi:arrow-down-bold" title="Lower priority" @click=${() => this._wfcMoveSource(i, 1)}></ha-icon>
+          <ha-icon class="wfc-ico-btn" icon=${disabled ? "mdi:eye-off" : "mdi:eye"} title=${disabled ? "Hidden — click to use this source" : "In use — click to hide"} @click=${() => this._wfcToggleSourceDisabled(i)}></ha-icon>
+          <ha-icon class="wfc-ico-btn ${open ? "active" : ""}" icon="mdi:pencil" title="Edit value mapping" @click=${() => this._wfcToggleSrcMap(ref)}></ha-icon>
+          <ha-icon class="wfc-ico-btn wfc-ico-del" icon="mdi:trash-can-outline" title="Remove source" @click=${() => this._wfcRemoveSource(i)}></ha-icon>
+        </div>
+        <div class="wfc-src-info">${providesPill}<span class="wfc-src-count">${vals}</span>${disabled ? eq`<span class="wfc-src-count">· hidden</span>` : eY}</div>
+        ${detail ? eq`<div class="wfc-src-detail">${detail}</div>` : eY}
+        ${this._wfcSourceSummaryList(src)}
+        ${open ? this._wfcSourceMappingEditor(i, src) : eY}
+      </div>
+    `;
+  };
+
+  edProto._wfcWeatherSourcesPanel = function () {
+    const sources = this._wfcEdSources();
+    const hasWeather = sources.some((s) => s.ref && !wfcIsDeviceRef(s.ref) && s.ref.startsWith("weather."));
+    const atCap = sources.length >= WFC_MAX_SOURCES;
+    const addOpen = !!this.__wfcAddSourceOpen && !atCap;
+    // "Add source" reveals two pickers only when the button is pressed: an entity
+    // (weather/sensor) or a device. Picking one adds it and collapses the pickers.
+    const addEntity = eq`
+      <ha-form
+        .hass=${this.hass}
+        .data=${{ e: "" }}
+        .schema=${[{ name: "e", selector: { entity: {} } }]}
+        .computeLabel=${() => "Add a weather entity or sensor"}
+        @value-changed=${(e) => { const v = e.detail && e.detail.value && e.detail.value.e; if (v) { this.__wfcAddSourceOpen = false; this._wfcAddSource(v); } }}
+      ></ha-form>`;
+    const addDevice = eq`
+      <ha-form
+        .hass=${this.hass}
+        .data=${{ d: "" }}
+        .schema=${[{ name: "d", selector: { device: {} } }]}
+        .computeLabel=${() => "…or add a local-station device"}
+        @value-changed=${(e) => { const v = e.detail && e.detail.value && e.detail.value.d; if (v) { this.__wfcAddSourceOpen = false; this._wfcAddSource(WFC_DEVICE_PREFIX + v); } }}
+      ></ha-form>`;
+    return eq`
+      <details class="wfc-panel"><summary class="wfc-panel-summary"><ha-icon class="wfc-panel-icon" icon="mdi:database-marker-outline"></ha-icon><span class="wfc-panel-title">Weather Sources</span></summary>
+        <div class="wfc-ed-panel">
+          <p class="wfc-hint">An ordered list of where weather data comes from — <b>top = highest priority</b>. For each value, the card walks the list top-down and uses the first source that has it. A source can be a weather entity, a local-station <b>device</b> (e.g. Ecowitt), or any single sensor. Devices/sensors give current conditions only; the forecast and weather condition always come from the highest weather entity in the list (marked 📡). Units are shown as each source reports them (no conversion).</p>
+          ${atCap
+            ? eq`<p class="wfc-hint">Maximum of ${WFC_MAX_SOURCES} sources reached. Remove one to add another.</p>`
+            : eq`
+              <div class="wfc-add-btn" role="button" tabindex="0" @click=${() => this._wfcToggleAddSource()}>
+                <ha-icon icon=${addOpen ? "mdi:close" : "mdi:plus"}></ha-icon>${addOpen ? "Cancel" : "Add Source"}
+              </div>
+              ${addOpen ? eq`<div class="wfc-add-pickers">${addEntity}${addDevice}</div>` : eY}
+            `}
+          ${sources.length ? sources.map((s, i) => this._wfcSourceRow(s, i, sources.length)) : eq`<p class="wfc-hint">No sources yet — add one above.</p>`}
+          ${!hasWeather && sources.length ? eq`<p class="wfc-src-warn">⚠ No weather entity in the list — the card needs one for the forecast and weather condition. Add a <code>weather.*</code> entity.</p>` : eY}
+          ${this._wfcGroup("Headline temperature")}
+          ${this._wfcHeadlineTempRow()}
+        </div>
+      </details>
+    `;
+  };
+
+  // Headline-temperature row: a read-only summary of the entity/device currently
+  // driving the big temperature, with an edit (✎) button that reveals the
+  // selector. No selector is shown until the user clicks edit. The stock
+  // `current.temperature_entity` override wins when set; otherwise the source
+  // list's temperature resolution drives it, and we display that source.
+  edProto._wfcToggleHeadlineEdit = function () {
+    this.__wfcHeadlineEdit = !this.__wfcHeadlineEdit;
+    this.requestUpdate && this.requestUpdate();
+  };
+  edProto._wfcHeadlineTempRow = function () {
+    const override = this._config.current && this._config.current.temperature_entity;
+    // Resolve what currently feeds the headline: the override if set, else the
+    // highest-priority source that provides `temperature`.
+    let usedEntity = override || "";
+    let usedLabel = "";
+    if (!usedEntity) {
+      for (const src of this._wfcEdSources()) {
+        if (src.disabled) continue;
+        const e = this._wfcSlotEntityForKeyEd(src, "temperature");
+        if (e && this.hass && this.hass.states[e]) { usedEntity = e; break; }
+      }
+    }
+    // Friendly display: device name when the resolved entity belongs to a device
+    // source; else the entity id.
+    if (usedEntity) {
+      const fn = this.hass && this.hass.states[usedEntity] && this.hass.states[usedEntity].attributes && this.hass.states[usedEntity].attributes.friendly_name;
+      usedLabel = fn || usedEntity;
+    } else {
+      usedLabel = "— none available —";
+    }
+    const live = usedEntity ? this._wfcLiveValue(usedEntity, "temperature") : "";
+    const editing = !!this.__wfcHeadlineEdit;
+    return eq`
+      <div class="wfc-src-row">
+        <div class="wfc-src-head">
+          <ha-icon class="wfc-src-lead" icon="mdi:thermometer"></ha-icon>
+          <span class="wfc-src-name">${usedLabel}${override ? eq` <span class="wfc-src-type">override</span>` : eY}</span>
+          ${live ? eq`<span class="wfc-srcmap-live">${live}</span>` : eY}
+          <ha-icon class="wfc-ico-btn ${editing ? "active" : ""}" icon="mdi:pencil" title="Change headline temperature source" @click=${() => this._wfcToggleHeadlineEdit()}></ha-icon>
+        </div>
+        ${editing
+          ? eq`
+            <p class="wfc-hint">Pick an entity to force the headline temperature, or clear it to let the source list decide (recommended).</p>
+            ${this._wfcStockFormFor(["current.temperature_entity"])}
+          `
+          : eY}
+      </div>
+    `;
+  };
+  // Editor-side mirror of the card's _wfcSlotEntityForKey (card prototype method
+  // isn't on the editor). Resolves a source + override to the entity for a key.
+  edProto._wfcSlotEntityForKeyEd = function (src, key) {
+    if (src.overrides && src.overrides[key]) return src.overrides[key];
+    const ref = src.ref;
+    if (!ref) return null;
+    if (wfcIsDeviceRef(ref)) {
+      const m = wfcResolveDeviceMap(this._config, this.hass, wfcDeviceIdOf(ref));
+      return m[key] || null;
+    }
+    if (ref.startsWith("weather.")) {
+      const st = this.hass && this.hass.states[ref];
+      return st && st.attributes && st.attributes[key] != null ? ref : null;
+    }
+    return null;
   };
 
   // "Forecast data to load" as two checkboxes (Hourly / Daily). Controls which
@@ -4227,8 +4744,9 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
   };
 
   // SVG paths for the reorder buttons (standard mdi chevrons).
-  const WFC_MDI_UP = "M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z";
-  const WFC_MDI_DOWN = "M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z";
+  // Reorder-button icons — design-system standard: mdi:arrow-up-bold /
+  // mdi:arrow-down-bold, used by every ordering selector (sections, metrics,
+  // details, Weather Sources) as <ha-icon> glyphs in the .wfc-ico-btn style.
 
   // MDI icon names for expansion-panel leading icons (matches our other cards).
   const WFC_PANEL_ICONS = {
@@ -4361,18 +4879,6 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
       return eq`
         <details class="wfc-detail-row2">
           <summary class="wfc-detail-summary">
-            <ha-icon-button
-              .path=${WFC_MDI_UP}
-              .disabled=${i === 0}
-              @click=${(e) => { e.preventDefault(); e.stopPropagation(); this._wfcMoveMetric(id, m.key, -1); }}
-              label="Move up"
-            ></ha-icon-button>
-            <ha-icon-button
-              .path=${WFC_MDI_DOWN}
-              .disabled=${i === arr.length - 1}
-              @click=${(e) => { e.preventDefault(); e.stopPropagation(); this._wfcMoveMetric(id, m.key, 1); }}
-              label="Move down"
-            ></ha-icon-button>
             <span class="wfc-order-name">${WFC_METRIC_LABELS[m.key] || m.key}</span>
             <select
               class="wfc-native-select wfc-metric-pos"
@@ -4383,6 +4889,10 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
                 (o) => eq`<option value=${o.value} ?selected=${o.value === m.pos}>${o.label}</option>`
               )}
             </select>
+            <ha-icon class="wfc-ico-btn ${i === 0 ? "disabled" : ""}" icon="mdi:arrow-up-bold" title="Move up"
+              @click=${(e) => { e.preventDefault(); e.stopPropagation(); this._wfcMoveMetric(id, m.key, -1); }}></ha-icon>
+            <ha-icon class="wfc-ico-btn ${i === arr.length - 1 ? "disabled" : ""}" icon="mdi:arrow-down-bold" title="Move down"
+              @click=${(e) => { e.preventDefault(); e.stopPropagation(); this._wfcMoveMetric(id, m.key, 1); }}></ha-icon>
           </summary>
           <div class="wfc-detail-fields">
             <p class="wfc-hint wfc-grow">Leave a field at its default to fall back to the section styling below.</p>
@@ -4437,6 +4947,13 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
     const wfc = this._wfcState();
     if (!wfc[id]) wfc[id] = {};
     wfc[id].show = wfcEvChecked(ev);
+    this._wfcCommit(wfc);
+  };
+  // Flip a section's show state directly (for the eye icon-button).
+  edProto._wfcToggleSectionShow = function (id) {
+    const wfc = this._wfcState();
+    if (!wfc[id]) wfc[id] = {};
+    wfc[id].show = !wfc[id].show;
     this._wfcCommit(wfc);
   };
 
@@ -4609,6 +5126,12 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
     const it = wfc.details.items.find((x) => x.key === key);
     if (it) it.show = wfcEvChecked(ev);
     this._wfcCommit(wfc);
+  };
+  // Flip a detail value's show state directly (for the eye icon-button).
+  edProto._wfcToggleDetailShow = function (key) {
+    const wfc = this._wfcState();
+    const it = wfc.details.items.find((x) => x.key === key);
+    if (it) { it.show = !it.show; this._wfcCommit(wfc); }
   };
 
   // Set an arbitrary field on a detail item to a raw value (e.g. mode select).
@@ -5638,36 +6161,14 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
       return eq`
         <details class="wfc-detail-row2">
           <summary class="wfc-detail-summary">
-            <ha-icon-button
-              .path=${WFC_MDI_UP}
-              .disabled=${i === 0}
-              @click=${(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                this._wfcMoveDetail(it.key, -1);
-              }}
-              label="Move up"
-            ></ha-icon-button>
-            <ha-icon-button
-              .path=${WFC_MDI_DOWN}
-              .disabled=${i === arr.length - 1}
-              @click=${(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                this._wfcMoveDetail(it.key, 1);
-              }}
-              label="Move down"
-            ></ha-icon-button>
-            <ha-icon class="wfc-detail-glyph" icon=${it.icon || meta.icon || "mdi:tag-outline"}></ha-icon>
+            <ha-icon class="wfc-detail-glyph wfc-glyph-accent" icon=${it.icon || meta.icon || "mdi:tag-outline"}></ha-icon>
             <span class="wfc-order-name">${meta.label || it.key}</span>
-            <input
-              type="checkbox"
-              class="wfc-checkbox"
-              title="Show value"
-              .checked=${!!it.show}
-              @click=${(e) => e.stopPropagation()}
-              @change=${(e) => this._wfcToggleDetail(it.key, e)}
-            />
+            <ha-icon class="wfc-ico-btn ${i === 0 ? "disabled" : ""}" icon="mdi:arrow-up-bold" title="Move up"
+              @click=${(e) => { e.preventDefault(); e.stopPropagation(); this._wfcMoveDetail(it.key, -1); }}></ha-icon>
+            <ha-icon class="wfc-ico-btn ${i === arr.length - 1 ? "disabled" : ""}" icon="mdi:arrow-down-bold" title="Move down"
+              @click=${(e) => { e.preventDefault(); e.stopPropagation(); this._wfcMoveDetail(it.key, 1); }}></ha-icon>
+            <ha-icon class="wfc-ico-btn" icon=${it.show ? "mdi:eye" : "mdi:eye-off"} title=${it.show ? "Shown — click to hide" : "Hidden — click to show"}
+              @click=${(e) => { e.preventDefault(); e.stopPropagation(); this._wfcToggleDetailShow(it.key); }}></ha-icon>
           </summary>
           <div class="wfc-detail-fields">
             <ha-icon-picker
@@ -5718,28 +6219,14 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
     const editorOrder = wfcEditorOrder(wfc.order);
 
     const sectionRows = wfc.order.map((id, i, arr) => {
+      const shown = !!(wfc[id] && wfc[id].show);
       return eq`
         <div class="wfc-order-row">
-          <ha-icon-button
-            .path=${WFC_MDI_UP}
-            .disabled=${i === 0}
-            @click=${() => this._wfcMoveSection(id, -1)}
-            label="Move up"
-          ></ha-icon-button>
-          <ha-icon-button
-            .path=${WFC_MDI_DOWN}
-            .disabled=${i === arr.length - 1}
-            @click=${() => this._wfcMoveSection(id, 1)}
-            label="Move down"
-          ></ha-icon-button>
+          <ha-icon class="wfc-order-lead" icon=${WFC_SECTION_ICONS[id] || WFC_PANEL_ICONS.options}></ha-icon>
           <span class="wfc-order-name">${WFC_LABEL[id] || id}</span>
-          <input
-            type="checkbox"
-            class="wfc-checkbox"
-            title="Show section"
-            .checked=${!!(wfc[id] && wfc[id].show)}
-            @change=${(e) => this._wfcToggleSection(id, e)}
-          />
+          <ha-icon class="wfc-ico-btn ${i === 0 ? "disabled" : ""}" icon="mdi:arrow-up-bold" title="Move up" @click=${() => this._wfcMoveSection(id, -1)}></ha-icon>
+          <ha-icon class="wfc-ico-btn ${i === arr.length - 1 ? "disabled" : ""}" icon="mdi:arrow-down-bold" title="Move down" @click=${() => this._wfcMoveSection(id, 1)}></ha-icon>
+          <ha-icon class="wfc-ico-btn" icon=${shown ? "mdi:eye" : "mdi:eye-off"} title=${shown ? "Shown — click to hide" : "Hidden — click to show"} @click=${() => this._wfcToggleSectionShow(id)}></ha-icon>
         </div>
       `;
     });
@@ -5763,6 +6250,97 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
         .wfc-ed-panel { padding: 8px 12px 12px; }
         .wfc-hint { color: #888; font-size: 11px; margin: 4px 0 12px; }
         .wfc-src-warn { color: var(--warning-color, #ffa726); font-size: 12px; margin: 2px 0 10px; }
+        /* Weather Sources ordered-list rows (design-system "Section rows"):
+           raised box, 20px accent leading icon, normal-weight name, type badge,
+           no-padding action icons; delete turns red on hover. */
+        .wfc-src-row {
+          background: rgba(255,255,255,0.02);
+          border: 1px solid var(--divider-color, #444);
+          border-radius: 10px;
+          padding: 6px 8px;
+          margin: 0 0 8px;
+        }
+        .wfc-src-head { display: flex; align-items: center; gap: 6px; }
+        .wfc-src-lead {
+          flex: none; --mdc-icon-size: 20px; width: 20px; height: 20px;
+          color: var(--primary-text-color, #e1e1e1);
+        }
+        .wfc-src-name {
+          flex: 1; min-width: 0; font-size: 13px; font-weight: 400;
+          color: var(--primary-text-color, #e1e1e1);
+          overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+        }
+        .wfc-src-type {
+          font-size: 11px; font-weight: 500; opacity: 0.6;
+          margin-left: 6px; text-transform: uppercase; letter-spacing: 0.03em;
+        }
+        /* Row 2 — what the source provides (blue pill) + value count. */
+        .wfc-src-info { display: flex; align-items: center; gap: 8px; margin: 3px 0 0 28px; }
+        .wfc-src-pill {
+          font-size: 11px; font-weight: 600; white-space: nowrap;
+          color: var(--primary-color, #03a9f4);
+        }
+        .wfc-src-count { font-size: 11px; color: var(--secondary-text-color, #9b9b9b); }
+        /* Row 3 — additional info / caveats. */
+        .wfc-src-detail {
+          font-size: 11px; margin: 2px 0 0 28px;
+          color: var(--secondary-text-color, #9b9b9b);
+        }
+        /* Hidden (disabled) source — dim everything but keep the eye clickable. */
+        .wfc-src-off .wfc-src-lead,
+        .wfc-src-off .wfc-src-name,
+        .wfc-src-off .wfc-src-info,
+        .wfc-src-off .wfc-cond-list { opacity: 0.45; }
+        /* Condensed read-only "Property · entity · value" summary per source. */
+        .wfc-cond-list {
+          margin: 4px 0 0 28px;
+          border-top: 1px solid var(--divider-color, #444);
+          padding-top: 4px;
+        }
+        .wfc-cond-row {
+          display: flex; align-items: center; gap: 8px;
+          font-size: 11px; line-height: 1.7;
+        }
+        .wfc-cond-prop {
+          flex: 0 0 34%; color: var(--primary-text-color, #e1e1e1); font-weight: 600;
+          overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+        }
+        .wfc-cond-ent {
+          flex: 1 1 auto; min-width: 0; color: var(--secondary-text-color, #9b9b9b);
+          overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+        }
+        .wfc-cond-val {
+          flex: 0 0 auto; text-align: right; font-variant-numeric: tabular-nums;
+          color: var(--primary-color, #03a9f4);
+        }
+        /* Flat action-icon buttons (no padding; spacing from the row gap). */
+        .wfc-ico-btn {
+          flex: none; cursor: pointer; --mdc-icon-size: 18px; width: 18px; height: 18px;
+          color: var(--secondary-text-color, #aaa);
+        }
+        .wfc-ico-btn:hover { color: var(--primary-text-color, #fff); }
+        .wfc-ico-btn.active { color: var(--primary-color, #2196F3); }
+        .wfc-ico-btn.wfc-ico-del:hover { color: var(--error-color, #f44336); }
+        .wfc-ico-btn.disabled { opacity: 0.25; pointer-events: none; }
+        /* Dashed-accent "+ Add Source" button, at the top of the list. */
+        .wfc-add-btn {
+          display: flex; align-items: center; justify-content: center; gap: 6px;
+          padding: 10px; margin: 0 0 8px;
+          border: 1px dashed var(--primary-color, #2196F3);
+          border-radius: 8px;
+          color: var(--primary-color, #2196F3);
+          cursor: pointer; font-size: 13px; font-weight: 600;
+        }
+        .wfc-add-btn:hover { background: rgba(var(--rgb-primary-color,33,150,243),0.08); }
+        .wfc-add-btn ha-icon { --mdc-icon-size: 18px; width: 18px; height: 18px; }
+        .wfc-add-pickers { margin: 0 0 8px; }
+        .wfc-srcmap-row { display: flex; align-items: center; gap: 8px; }
+        .wfc-srcmap-row ha-form { flex: 1 1 auto; }
+        .wfc-srcmap-live {
+          flex: 0 0 auto; min-width: 56px; text-align: right;
+          font-size: 12px; font-variant-numeric: tabular-nums;
+          color: var(--secondary-text-color, #9b9b9b);
+        }
         .wfc-order-row {
           display: flex;
           align-items: center;
@@ -5770,6 +6348,11 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
           padding: 2px 0;
         }
         .wfc-order-name { flex: 1; font-size: 13px; font-weight: 600; color: var(--primary-text-color, #e1e1e1); }
+        /* Representative leading icon for ordered rows — theme accent color. */
+        .wfc-order-lead {
+          flex: none; --mdc-icon-size: 20px; width: 20px; height: 20px; margin-right: 2px;
+          color: var(--primary-color, #2196F3);
+        }
         /* Higher specificity than the lone .wfc-native-select (which sets
            width:100% and is declared later) so the placement select in the
            summary row sizes to content instead of overflowing the panel. */
@@ -5783,6 +6366,8 @@ let t,e;function i(t,e,i,r){Object.defineProperty(t,e,{get:i,set:r,enumerable:!0
         .wfc-detail-panel { margin-bottom: 6px; --expansion-panel-summary-padding: 0 8px; }
         .wfc-detail-header-slot { display: flex; width: 100%; align-items: center; }
         .wfc-detail-glyph { color: var(--secondary-text-color); margin: 0 2px; --mdc-icon-size: 20px; }
+        /* Representative glyph in theme accent color (Values rows). */
+        .wfc-detail-glyph.wfc-glyph-accent { color: var(--primary-color, #2196F3); }
         /* One row per setting (seed-card style): a simple vertical stack, each
            control on its own full-width line. */
         .wfc-detail-fields {
