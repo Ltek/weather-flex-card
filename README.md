@@ -56,3 +56,30 @@ See `CHANGELOG.md` for the per-build detail.
 Example showing just a fraction of the available options...
 
 <!-- Add screenshot here -->
+
+<!-- SCREENSHOTS:START -->
+<table>
+  <tr>
+    <td align="center" valign="top">
+      <img src="screenshots/screen1.jpg" width="100%" alt="screen1">
+    </td>
+    <td align="center" valign="top">
+      <img src="screenshots/screen2.jpg" width="100%" alt="screen2">
+    </td>
+    <td align="center" valign="top">
+      <img src="screenshots/screen3.jpg" width="100%" alt="screen3">
+    </td>
+    <td align="center" valign="top">
+      <img src="screenshots/skybar.png" width="100%" alt="skybar">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <img src="screenshots/sources.jpg" width="100%" alt="sources">
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<!-- SCREENSHOTS:END -->
